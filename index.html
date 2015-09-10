@@ -1,57 +1,1627 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Acee sjch2014 by niutan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Acee sjch2014</h1>
-      <h2 class="project-tagline">acee</h2>
-      <a href="https://github.com/niutan/acee_sjch2014" class="btn">View on GitHub</a>
-      <a href="https://github.com/niutan/acee_sjch2014/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/niutan/acee_sjch2014/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<html>
+<script type="text/javascript" src="FileSaver.js"></script>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>2014级书籍传承</title>
+  <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    ; !function (a, b) {
+      "use strict";
+      var d, e, g, h, i,
+      c = "", //组件存放目录，为空表示自动获取(不用填写host，相对站点的根目录即可)。
+      f = { host: "http://" + location.host, getPath: function () { var a = document.scripts, b = a[a.length - 1].src; return c ? f.host + c : b.substring(0, b.lastIndexOf("/") + 1) }, type: ["dialog", "page", "iframe", "loading", "tips"] }; a.layer = { v: "1.8.4", ie6: !-[1, ] && !a.XMLHttpRequest, index: 0, path: f.getPath(), use: function (a, b) { var f, g, h, e = d("head")[0]; a = a.replace(/\s/g, ""), f = /\.css$/.test(a), g = document.createElement(f ? "link" : "script"), h = a.replace(/\.|\//g, ""), f && (g.type = "text/css", g.rel = "stylesheet"), g[f ? "href" : "src"] = /^http:\/\//.test(a) ? a : layer.path + a, g.id = h, d("#" + h)[0] || e.appendChild(g), b && (document.all ? d(g).ready(b) : d(g).load(b)) }, alert: function (a, b, c, e) { var f = "function" == typeof c, g = { dialog: { msg: a, type: b, yes: f ? c : e }, area: ["auto", "auto"] }; return f || (g.title = c), d.layer(g) }, confirm: function (a, b, c, e) { var f = "function" == typeof c, g = { dialog: { msg: a, type: 4, btns: 2, yes: b, no: f ? c : e } }; return f || (g.title = c), d.layer(g) }, msg: function (a, c, e, f) { var g = { title: !1, closeBtn: !1, time: c === b ? 2 : c, dialog: { msg: "" === a || a === b ? "&nbsp;" : a }, end: f }; return "object" == typeof e ? (g.dialog.type = e.type, g.shade = e.shade, g.shift = e.rate) : "function" == typeof e ? g.end = e : g.dialog.type = e, d.layer(g) }, load: function (a, b) { return "string" == typeof a ? layer.msg(a, b || 0, 16) : d.layer({ time: a, loading: { type: b }, bgcolor: b ? "#fff" : "", shade: b ? [.1, "#000"] : [0], border: 3 !== b && b ? [6, .3, "#000"] : [0], type: 3, title: ["", !1], closeBtn: [0, !1] }) }, tips: function (a, b, c, e, f, g) { var h = { type: 4, shade: !1, success: function (a) { this.closeBtn || a.find(".xubox_tips").css({ "padding-right": 10 }) }, bgcolor: "", tips: { msg: a, follow: b } }; return h.time = "object" == typeof c ? c.time : 0 | c, c = c || {}, h.closeBtn = c.closeBtn || !1, h.maxWidth = c.maxWidth || e, h.tips.guide = c.guide || f, h.tips.style = c.style || g, h.tips.more = c.more, d.layer(h) } }, g = ["xubox_layer", "xubox_iframe", ".xubox_title", ".xubox_text", ".xubox_page", ".xubox_main"], h = function (a) { var b = this, c = b.config; layer.index++, b.index = layer.index, b.config = d.extend({}, c, a), b.config.dialog = d.extend({}, c.dialog, a.dialog), b.config.page = d.extend({}, c.page, a.page), b.config.iframe = d.extend({}, c.iframe, a.iframe), b.config.loading = d.extend({}, c.loading, a.loading), b.config.tips = d.extend({}, c.tips, a.tips), b.creat() }, h.pt = h.prototype, h.pt.config = { type: 0, shade: [.3, "#000"], fix: !0, move: ".xubox_title", title: ["信息", !0], offset: ["", "50%"], area: ["310px", "auto"], closeBtn: [0, !0], time: 0, bgcolor: "#fff", border: [6, .3, "#000"], zIndex: 19891014, maxWidth: 400, dialog: { btns: 1, btn: ["确定", "取消"], type: 8, msg: "", yes: function (a) { layer.close(a) }, no: function (a) { layer.close(a) } }, page: { dom: "#xulayer", html: "", url: "" }, iframe: { src: "http://sentsin.com", scrolling: "auto" }, loading: { type: 0 }, tips: { msg: "", follow: "", guide: 0, isGuide: !0, style: ["background-color:#FF9900; color:#fff;", "#FF9900"] }, success: function () { }, close: function (a) { layer.close(a) }, end: function () { } }, h.pt.space = function (a) { var c, d, e, f, h, i, j, k, l, m, n, o, b = this; return a = a || "", c = b.index, d = b.config, e = d.dialog, f = -1 === e.type ? "" : '<span class="xubox_msg xulayer_png32 xubox_msgico xubox_msgtype' + e.type + '"></span>', h = ['<div class="xubox_dialog">' + f + '<span class="xubox_msg xubox_text" style="' + (f ? "" : "padding-left:20px") + '">' + e.msg + "</span></div>", '<div class="xubox_page">' + a + "</div>", '<iframe scrolling="' + d.iframe.scrolling + '" allowtransparency="true" id="' + g[1] + c + '" name="' + g[1] + c + '" onload="this.className=\'' + g[1] + '\'" class="' + g[1] + '" frameborder="0" src="' + d.iframe.src + '"></iframe>', '<span class="xubox_loading xubox_loading_' + d.loading.type + '"></span>', '<div class="xubox_tips" style="' + d.tips.style[0] + '"><div class="xubox_tipsMsg">' + d.tips.msg + '</div><i class="layerTipsG"></i></div>'], i = "", j = "", k = d.zIndex + c, l = "z-index:" + k + "; background-color:" + d.shade[1] + "; opacity:" + d.shade[0] + "; filter:alpha(opacity=" + 100 * d.shade[0] + ");", d.shade[0] && (i = '<div times="' + c + '" id="xubox_shade' + c + '" class="xubox_shade" style="' + l + '"></div>'), d.zIndex = k, m = "", n = "", o = "z-index:" + (k - 1) + ";  background-color: " + d.border[2] + "; opacity:" + d.border[1] + "; filter:alpha(opacity=" + 100 * d.border[1] + "); top:-" + d.border[0] + "px; left:-" + d.border[0] + "px;", d.border[0] && (j = '<div id="xubox_border' + c + '" class="xubox_border" style="' + o + '"></div>'), !d.maxmin || 1 !== d.type && 2 !== d.type || /^\d+%$/.test(d.area[0]) && /^\d+%$/.test(d.area[1]) || (n = '<a class="xubox_min" href="javascript:;"><cite></cite></a><a class="xubox_max xulayer_png32" href="javascript:;"></a>'), d.closeBtn[1] && (n += '<a class="xubox_close xulayer_png32 xubox_close' + d.closeBtn[0] + '" href="javascript:;" style="' + (4 === d.type ? "position:absolute; right:-3px; _right:7px; top:-4px;" : "") + '"></a>'), d.title[1] && (m = '<div class="xubox_title"><em>' + d.title[0] + "</em></div>"), [i, '<div times="' + c + '" showtime="' + d.time + '" style="z-index:' + k + '" id="' + g[0] + c + '" class="' + g[0] + '">' + '<div style="background-color:' + d.bgcolor + "; z-index:" + k + '" class="xubox_main">' + h[d.type] + m + '<span class="xubox_setwin">' + n + "</span>" + '<span class="xubox_botton"></span>' + "</div>" + j + "</div>"] }, h.pt.creat = function () { var k, l, m, a = this, b = "", c = a.config, e = c.dialog, f = a.index, h = c.page, i = d("body"), j = function (c) { var c = c || ""; b = a.space(c), i.append(d(b[0])) }; switch (c.title === !1 ? c.title = [] : "string" == typeof c.title && (c.title = [c.title, !0]), c.type) { case 0: c.title[1] || (c.area = ["auto", "auto"]), d(".xubox_dialog")[0] && layer.close(d(".xubox_dialog").parents("." + g[0]).attr("times")); break; case 1: if ("" !== h.html) j('<div class="xuboxPageHtml">' + h.html + "</div>"), i.append(d(b[1])); else if ("" !== h.url) j('<div class="xuboxPageHtml" id="xuboxPageHtml' + f + '">' + h.html + "</div>"), i.append(d(b[1])), d.get(h.url, function (a) { d("#xuboxPageHtml" + f).html(a.toString()), h.ok && h.ok(a) }); else { if (0 != d(h.dom).parents(g[4]).length) return; j(), d(h.dom).show().wrap(d(b[1])) } break; case 3: c.title = [], c.area = ["auto", "auto"], c.closeBtn = ["", !1], d(".xubox_loading")[0] && layer.closeLoad(); break; case 4: c.title = [], c.area = ["auto", "auto"], c.fix = !1, c.border = [0], c.tips.more || layer.closeTips() } if (1 !== c.type && (j(), i.append(d(b[1]))), k = a.layerE = d("#" + g[0] + f), k.css({ width: c.area[0], height: c.area[1] }), c.fix || k.css({ position: "absolute" }), c.title[1] && (3 !== c.type || 4 !== c.type)) switch (l = 0 === c.type ? e : c, m = k.find(".xubox_botton"), l.btn = c.btn || e.btn, l.btns) { case 0: m.html("").hide(); break; case 1: m.html('<a href="javascript:;" class="xubox_yes xubox_botton1">' + l.btn[0] + "</a>"); break; case 2: m.html('<a href="javascript:;" class="xubox_yes xubox_botton2">' + l.btn[0] + "</a>" + '<a href="javascript:;" class="xubox_no xubox_botton3">' + l.btn[1] + "</a>") } "auto" === k.css("left") ? (k.hide(), setTimeout(function () { k.show(), a.set(f) }, 500)) : a.set(f), c.time <= 0 || a.autoclose(), a.callback() }, f.fade = function (a, b, c) { a.css({ opacity: 0 }).animate({ opacity: c }, b) }, h.pt.offset = function () { var a = this, b = a.config, c = a.layerE, d = c.outerHeight(); a.offsetTop = "" === b.offset[0] && d < e.height() ? (e.height() - d - 2 * b.border[0]) / 2 : -1 != b.offset[0].indexOf("px") ? parseFloat(b.offset[0]) : parseFloat(b.offset[0] || 0) / 100 * e.height(), a.offsetTop = a.offsetTop + b.border[0] + (b.fix ? 0 : e.scrollTop()), -1 != b.offset[1].indexOf("px") ? a.offsetLeft = parseFloat(b.offset[1]) + b.border[0] : (b.offset[1] = "" === b.offset[1] ? "50%" : b.offset[1], a.offsetLeft = "50%" === b.offset[1] ? b.offset[1] : parseFloat(b.offset[1]) / 100 * e.width() + b.border[0]) }, h.pt.set = function (a) { var i, k, l, m, n, o, p, q, r, b = this, c = b.config; switch (c.dialog, i = c.page, c.loading, k = b.layerE, l = k.find(g[2]), b.autoArea(a), c.title[1] ? 0 === c.type && layer.ie6 && l.css({ width: k.outerWidth() }) : 4 !== c.type && k.find(".xubox_close").addClass("xubox_close1"), k.attr({ type: f.type[c.type] }), b.offset(), 4 !== c.type && (c.shift && !layer.ie6 ? "object" == typeof c.shift ? b.shift(c.shift[0], c.shift[1] || 500, c.shift[2]) : b.shift(c.shift, 500) : k.css({ top: b.offsetTop, left: b.offsetLeft })), c.type) { case 0: k.find(g[5]).css({ "background-color": "#fff" }), c.title[1] ? k.find(g[3]).css({ paddingTop: 18 + l.outerHeight() }) : (k.find(".xubox_msgico").css({ top: 8 }), k.find(g[3]).css({ marginTop: 11 })); break; case 1: k.find(i.dom).addClass("layer_pageContent"), c.shade[0] && k.css({ zIndex: c.zIndex + 1 }), c.title[1] && k.find(g[4]).css({ top: l.outerHeight() }); break; case 2: m = k.find("." + g[1]), n = k.height(), m.addClass("xubox_load").css({ width: k.width() }), c.title[1] ? m.css({ top: l.height(), height: n - l.height() }) : m.css({ top: 0, height: n }), layer.ie6 && m.attr("src", c.iframe.src); break; case 4: o = [0, k.outerHeight()], p = d(c.tips.follow), q = { width: p.outerWidth(), height: p.outerHeight(), top: p.offset().top, left: p.offset().left }, r = k.find(".layerTipsG"), c.tips.isGuide || r.remove(), k.outerWidth() > c.maxWidth && k.width(c.maxWidth), q.tipColor = c.tips.style[1], o[0] = k.outerWidth(), q.autoLeft = function () { q.left + o[0] - e.width() > 0 ? (q.tipLeft = q.left + q.width - o[0], r.css({ right: 12, left: "auto" })) : q.tipLeft = q.left }, q.where = [function () { q.autoLeft(), q.tipTop = q.top - o[1] - 10, r.removeClass("layerTipsB").addClass("layerTipsT").css({ "border-right-color": q.tipColor }) }, function () { q.tipLeft = q.left + q.width + 10, q.tipTop = q.top, r.removeClass("layerTipsL").addClass("layerTipsR").css({ "border-bottom-color": q.tipColor }) }, function () { q.autoLeft(), q.tipTop = q.top + q.height + 10, r.removeClass("layerTipsT").addClass("layerTipsB").css({ "border-right-color": q.tipColor }) }, function () { q.tipLeft = q.left - o[0] + 10, q.tipTop = q.top, r.removeClass("layerTipsR").addClass("layerTipsL").css({ "border-bottom-color": q.tipColor }) }], q.where[c.tips.guide](), 0 === c.tips.guide ? q.top - (e.scrollTop() + o[1] + 16) < 0 && q.where[2]() : 1 === c.tips.guide ? e.width() - (q.left + q.width + o[0] + 16) > 0 || q.where[3]() : 2 === c.tips.guide ? q.top - e.scrollTop() + q.height + o[1] + 16 - e.height() > 0 && q.where[0]() : 3 === c.tips.guide ? o[0] + 16 - q.left > 0 && q.where[1]() : 4 === c.tips.guide, k.css({ left: q.tipLeft, top: q.tipTop }) } c.fadeIn && (f.fade(k, c.fadeIn, 1), f.fade(d("#xubox_shade" + a), c.fadeIn, c.shade[0])), c.fix && "" === c.offset[0] && !c.shift && e.on("resize", function () { k.css({ top: (e.height() - k.outerHeight()) / 2 }) }), b.move() }, h.pt.shift = function (a, b, c) { var k, d = this, f = d.config, g = d.layerE, h = 0, i = e.width(), j = e.height() + (f.fix ? 0 : e.scrollTop()); switch (h = "50%" == f.offset[1] || "" == f.offset[1] ? g.outerWidth() / 2 : g.outerWidth(), k = { t: { top: d.offsetTop }, b: { top: j - g.outerHeight() - f.border[0] }, cl: h + f.border[0], ct: -g.outerHeight(), cr: i - h - f.border[0] }, a) { case "left-top": g.css({ left: k.cl, top: k.ct }).animate(k.t, b); break; case "top": g.css({ top: k.ct }).animate(k.t, b); break; case "right-top": g.css({ left: k.cr, top: k.ct }).animate(k.t, b); break; case "right-bottom": g.css({ left: k.cr, top: j }).animate(c ? k.t : k.b, b); break; case "bottom": g.css({ top: j }).animate(c ? k.t : k.b, b); break; case "left-bottom": g.css({ left: k.cl, top: j }).animate(c ? k.t : k.b, b); break; case "left": g.css({ left: -g.outerWidth() }).animate({ left: d.offsetLeft }, b) } }, h.pt.autoArea = function (a) { var c, e, f, h, i, k, j, l, m, n, o, b = this; switch (a = a || b.index, c = b.config, e = c.page, f = d("#" + g[0] + a), h = f.find(g[2]), i = f.find(g[5]), j = c.title[1] ? h.innerHeight() : 0, l = 0, "auto" === c.area[0] && i.outerWidth() >= c.maxWidth && f.css({ width: c.maxWidth }), c.type) { case 0: m = f.find(".xubox_botton>a"), k = f.find(g[3]).outerHeight() + 20, m.length > 0 && (l = m.outerHeight() + 20); break; case 1: n = f.find(g[4]), k = d(e.dom).outerHeight(), "auto" === c.area[0] && f.css({ width: n.outerWidth() }), ("" !== e.html || "" !== e.url) && (k = n.outerHeight()); break; case 2: f.find("iframe").css({ width: f.outerWidth(), height: f.outerHeight() - (c.title[1] ? h.innerHeight() : 0) }); break; case 3: o = f.find(".xubox_loading"), k = o.outerHeight(), i.css({ width: o.width() }) } "auto" === c.area[1] && i.css({ height: j + k + l }), d("#xubox_border" + a).css({ width: f.outerWidth() + 2 * c.border[0], height: f.outerHeight() + 2 * c.border[0] }), layer.ie6 && "auto" !== c.area[0] && i.css({ width: f.outerWidth() }), "50%" !== c.offset[1] && "" != c.offset[1] || 4 === c.type ? f.css({ marginLeft: 0 }) : f.css({ marginLeft: -f.outerWidth() / 2 }) }, h.pt.move = function () { var a = this, b = a.config, c = { setY: 0, moveLayer: function () { var a; a = 0 == parseInt(c.layerE.css("margin-left")) ? parseInt(c.move.css("left")) : parseInt(c.move.css("left")) + -parseInt(c.layerE.css("margin-left")), "fixed" !== c.layerE.css("position") && (a -= c.layerE.parent().offset().left, c.setY = 0), c.layerE.css({ left: a, top: parseInt(c.move.css("top")) - c.setY }) } }; b.move && a.layerE.find(b.move).attr("move", "ok"), b.move ? a.layerE.find(b.move).css({ cursor: "move" }) : a.layerE.find(b.move).css({ cursor: "auto" }), d(b.move).on("mousedown", function (a) { if (a.preventDefault(), "ok" === d(this).attr("move")) { c.ismove = !0, c.layerE = d(this).parents("." + g[0]); var f = c.layerE.offset().left, h = c.layerE.offset().top, i = c.layerE.width() - 6, j = c.layerE.height() - 6; d("#xubox_moves")[0] || d("body").append('<div id="xubox_moves" class="xubox_moves" style="left:' + f + "px; top:" + h + "px; width:" + i + "px; height:" + j + 'px; z-index:2147483584"></div>'), c.move = d("#xubox_moves"), b.moveType && c.move.css({ opacity: 0 }), c.moveX = a.pageX - c.move.position().left, c.moveY = a.pageY - c.move.position().top, "fixed" !== c.layerE.css("position") || (c.setY = e.scrollTop()) } }), d(document).mousemove(function (a) { var d, f, g, h; c.ismove && (d = a.pageX - c.moveX, f = a.pageY - c.moveY, a.preventDefault(), b.moveOut || (c.setY = e.scrollTop(), g = e.width() - c.move.outerWidth() - b.border[0], h = b.border[0] + c.setY, d < b.border[0] && (d = b.border[0]), d > g && (d = g), h > f && (f = h), f > e.height() - c.move.outerHeight() - b.border[0] + c.setY && (f = e.height() - c.move.outerHeight() - b.border[0] + c.setY)), c.move.css({ left: d, top: f }), b.moveType && c.moveLayer(), d = null, f = null, g = null, h = null) }).mouseup(function () { try { c.ismove && (c.moveLayer(), c.move.remove()), c.ismove = !1 } catch (a) { c.ismove = !1 } b.moveEnd && b.moveEnd() }) }, h.pt.autoclose = function () { var a = this, b = a.config.time, c = function () { b--, 0 === b && (layer.close(a.index), clearInterval(a.autotime)) }; a.autotime = setInterval(c, 1e3) }, f.config = { end: {} }, h.pt.callback = function () { var a = this, b = a.layerE, c = a.config, e = c.dialog; a.openLayer(), a.config.success(b), layer.ie6 && a.IE6(b), b.find(".xubox_close").on("click", function () { c.close(a.index), layer.close(a.index) }), b.find(".xubox_yes").on("click", function () { c.yes ? c.yes(a.index) : e.yes(a.index) }), b.find(".xubox_no").on("click", function () { c.no ? c.no(a.index) : e.no(a.index), layer.close(a.index) }), a.config.shadeClose && d("#xubox_shade" + a.index).on("click", function () { layer.close(a.index) }), b.find(".xubox_min").on("click", function () { layer.min(a.index, c), c.min && c.min(b) }), b.find(".xubox_max").on("click", function () { d(this).hasClass("xubox_maxmin") ? (layer.restore(a.index), c.restore && c.restore(b)) : (layer.full(a.index, c), c.full && c.full(b)) }), f.config.end[a.index] = c.end }, f.reselect = function () { d.each(d("select"), function () { var c = d(this); c.parents("." + g[0])[0] || 1 == c.attr("layer") && d("." + g[0]).length < 1 && c.removeAttr("layer").show(), c = null }) }, h.pt.IE6 = function (a) { var f, b = this, c = a.offset().top; f = b.config.fix ? function () { a.css({ top: e.scrollTop() + c }) } : function () { a.css({ top: c }) }, f(), e.scroll(f), d.each(d("select"), function () { var c = d(this); c.parents("." + g[0])[0] || "none" == c.css("display") || c.attr({ layer: "1" }).hide(), c = null }) }, h.pt.openLayer = function () { var a = this; a.layerE, layer.autoArea = function (b) { return a.autoArea(b) }, layer.shift = function (b, c, d) { a.shift(b, c, d) }, layer.setMove = function () { return a.move() }, layer.zIndex = a.config.zIndex, layer.setTop = function (a) { var b = function () { layer.zIndex++, a.css("z-index", layer.zIndex + 1) }; return layer.zIndex = parseInt(a[0].style.zIndex), a.on("mousedown", b), layer.zIndex } }, f.isauto = function (a, b, c) { "auto" === b.area[0] && (b.area[0] = a.outerWidth()), "auto" === b.area[1] && (b.area[1] = a.outerHeight()), a.attr({ area: b.area + "," + c }), a.find(".xubox_max").addClass("xubox_maxmin") }, f.rescollbar = function (a) { g.html.attr("layer-full") == a && (g.html[0].style.removeProperty ? g.html[0].style.removeProperty("overflow") : g.html[0].style.removeAttribute("overflow"), g.html.removeAttr("layer-full")) }, layer.getIndex = function (a) { return d(a).parents("." + g[0]).attr("times") }, layer.getChildFrame = function (a, b) { return b = b || d("." + g[1]).parents("." + g[0]).attr("times"), d("#" + g[0] + b).find("." + g[1]).contents().find(a) }, layer.getFrameIndex = function (a) { return d(a ? "#" + a : "." + g[1]).parents("." + g[0]).attr("times") }, layer.iframeAuto = function (a) { var b, c, e, f, h; a = a || d("." + g[1]).parents("." + g[0]).attr("times"), b = layer.getChildFrame("body", a).outerHeight(), c = d("#" + g[0] + a), e = c.find(g[2]), f = 0, e && (f = e.height()), c.css({ height: b + f }), h = -parseInt(d("#xubox_border" + a).css("top")), d("#xubox_border" + a).css({ height: b + 2 * h + f }), d("#" + g[1] + a).css({ height: b }) }, layer.iframeSrc = function (a, b) { d("#" + g[0] + a).find("iframe").attr("src", b) }, layer.area = function (a, b) { var j, c = [d("#" + g[0] + a), d("#xubox_border" + a)], e = c[0].attr("type"), h = c[0].find(g[5]), i = c[0].find(g[2]); (e === f.type[1] || e === f.type[2]) && (c[0].css(b), h.css({ width: b.width, height: b.height }), e === f.type[2] && (j = c[0].find("iframe"), j.css({ width: b.width, height: i ? b.height - i.innerHeight() : b.height })), "0px" !== c[0].css("margin-left") && (b.hasOwnProperty("top") && c[0].css({ top: b.top - (c[1][0] ? parseFloat(c[1].css("top")) : 0) }), b.hasOwnProperty("left") && c[0].css({ left: b.left + c[0].outerWidth() / 2 - (c[1][0] ? parseFloat(c[1].css("left")) : 0) }), c[0].css({ marginLeft: -c[0].outerWidth() / 2 })), c[1][0] && c[1].css({ width: parseFloat(b.width) - 2 * parseFloat(c[1].css("left")), height: parseFloat(b.height) - 2 * parseFloat(c[1].css("top")) })) }, layer.min = function (a, b) { var c = d("#" + g[0] + a), e = [c.position().top, c.position().left + parseFloat(c.css("margin-left"))]; f.isauto(c, b, e), layer.area(a, { width: 180, height: 35 }), c.find(".xubox_min").hide(), "page" === c.attr("type") && c.find(g[4]).hide(), f.rescollbar(a) }, layer.restore = function (a) { var b = d("#" + g[0] + a), c = b.attr("area").split(","); b.attr("type"), layer.area(a, { width: parseFloat(c[0]), height: parseFloat(c[1]), top: parseFloat(c[2]), left: parseFloat(c[3]) }), b.find(".xubox_max").removeClass("xubox_maxmin"), b.find(".xubox_min").show(), "page" === b.attr("type") && b.find(g[4]).show(), f.rescollbar(a) }, layer.full = function (a, b) { var i, c = d("#" + g[0] + a), h = 2 * b.border[0] || 6, j = [c.position().top, c.position().left + parseFloat(c.css("margin-left"))]; f.isauto(c, b, j), g.html.attr("layer-full") || g.html.css("overflow", "hidden").attr("layer-full", a), clearTimeout(i), i = setTimeout(function () { layer.area(a, { top: "fixed" === c.css("position") ? 0 : e.scrollTop(), left: "fixed" === c.css("position") ? 0 : e.scrollLeft(), width: e.width() - h, height: e.height() - h }) }, 100) }, layer.title = function (a, b) { var c = d("#" + g[0] + (b || layer.index)).find(".xubox_title>em"); c.html(a) }, layer.close = function (a) { var h, b = d("#" + g[0] + a), c = b.attr("type"), e = d("#xubox_moves, #xubox_shade" + a); if (b[0]) { if (c == f.type[1]) if (b.find(".xuboxPageHtml")[0]) b[0].innerHTML = "", b.remove(); else for (b.find(".xubox_setwin,.xubox_close,.xubox_botton,.xubox_title,.xubox_border").remove(), h = 0; 3 > h; h++) b.find(".layer_pageContent").unwrap().hide(); else b[0].innerHTML = "", b.remove(); e.remove(), layer.ie6 && f.reselect(), f.rescollbar(a), "function" == typeof f.config.end[a] && f.config.end[a](), delete f.config.end[a] } }, layer.closeLoad = function () { layer.close(d(".xubox_loading").parents("." + g[0]).attr("times")) }, layer.closeTips = function () { layer.closeAll("tips") }, layer.closeAll = function (a) { d.each(d("." + g[0]), function () { var b = d(this), c = a ? b.attr("type") === a : 1; c && layer.close(b.attr("times")), c = null }) }, f.run = function () { d = jQuery, e = d(a), g.html = d("html"), layer.use("skin/layer.css"), d.layer = function (a) { var b = new h(a); return b.index }, (new Image).src = layer.path + "skin/default/xubox_ico0.png" }, i = "../../init/jquery", a.seajs ? define([i], function (b, c) { f.run(), c.layer = [a.layer, a.$.layer] }) : f.run()
+    }(window);
+  </script>
+  <script type="text/javascript">
+    /* idTabs ~ Sean Catchpole - Version 2.2 - MIT/GPL */
+    (function () {
+      var dep = { "jQuery": "http://code.jquery.com/jquery-latest.min.js" };
+      var init = function () {
 
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        /* Options (in any order): 
+         
+         start (number|string) 
+            Index number of default tab. ex: $(...).idTabs(0) 
+            String of id of default tab. ex: $(...).idTabs("tab1") 
+            default: class "selected" or index 0 
+            Passing null will force it to not select a default tab 
+         
+         change (boolean) 
+            True - Url will change. ex: $(...).idTabs(true) 
+            False - Url will not change. ex: $(...).idTabs(false) 
+            default: false 
+         
+         click (function) 
+            Function will be called when a tab is clicked. ex: $(...).idTabs(foo) 
+            If the function returns true, idTabs will show/hide content (as usual). 
+            If the function returns false, idTabs will not take any action. 
+            The function is passed four variables: 
+              The id of the element to be shown 
+              an array of all id's that can be shown 
+              the element containing the tabs 
+              and the current settings 
+         
+         selected (string) 
+            Class to use for selected. ex: $(...).idTabs(".current") 
+            default: ".selected" 
+         
+         event (string) 
+            Event to trigger idTabs on. ex: $(...).idTabs("!mouseover") 
+            default: "!click" 
+            To bind multiple event, call idTabs multiple times 
+              ex: $(...).idTabs("!click").idTabs("!focus") 
+         
+        */
+        (function ($) {
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+          $.fn.idTabs = function () {
+            //Loop Arguments matching options 
+            var s = {};
+            for (var i = 0; i < arguments.length; ++i) {
+              var a = arguments[i];
+              switch (a.constructor) {
+                case Object: $.extend(s, a); break;
+                case Boolean: s.change = a; break;
+                case Number: s.start = a; break;
+                case Function: s.click = a; break;
+                case String:
+                  if (a.charAt(0) == '.') s.selected = a;
+                  else if (a.charAt(0) == '!') s.event = a;
+                  else s.start = a;
+                  break;
+              }
+            }
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+            if (typeof s['return'] == "function") //backwards compatible 
+              s.change = s['return'];
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+            return this.each(function () { $.idTabs(this, s); }); //Chainable 
+          }
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
+          $.idTabs = function (tabs, options) {
+            //Settings 
+            var meta = ($.metadata) ? $(tabs).metadata() : {};
+            var s = $.extend({}, $.idTabs.settings, meta, options);
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+            //Play nice 
+            if (s.selected.charAt(0) == '.') s.selected = s.selected.substr(1);
+            if (s.event.charAt(0) == '!') s.event = s.event.substr(1);
+            if (s.start == null) s.start = -1; //no tab selected 
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+            //Setup Tabs 
+            var showId = function () {
+              if ($(this).is('.' + s.selected))
+                return s.change; //return if already selected 
+              var id = "#" + this.href.split('#')[1];
+              var aList = []; //save tabs 
+              var idList = []; //save possible elements 
+              $("a", tabs).each(function () {
+                if (this.href.match(/#/)) {
+                  aList.push(this);
+                  idList.push("#" + this.href.split('#')[1]);
+                }
+              });
+              if (s.click && !s.click.apply(this, [id, idList, tabs, s])) return s.change;
+              //Clear tabs, and hide all 
+              for (i in aList) $(aList[i]).removeClass(s.selected);
+              for (i in idList) $(idList[i]).hide();
+              //Select clicked tab and show content 
+              $(this).addClass(s.selected);
+              $(id).show();
+              return s.change; //Option for changing url 
+            }
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+            //Bind idTabs 
+            var list = $("a[href*='#']", tabs).unbind(s.event, showId).bind(s.event, showId);
+            list.each(function () { $("#" + this.href.split('#')[1]).hide(); });
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+            //Select default tab 
+            var test = false;
+            if ((test = list.filter('.' + s.selected)).length); //Select tab with selected class 
+            else if (typeof s.start == "number" && (test = list.eq(s.start)).length); //Select num tab 
+            else if (typeof s.start == "string" //Select tab linking to id 
+                 && (test = list.filter("[href*='#" + s.start + "']")).length);
+            if (test) { test.removeClass(s.selected); test.trigger(s.event); } //Select tab 
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+            return s; //return current settings (be creative) 
+          }
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/niutan/acee_sjch2014">Acee sjch2014</a> is maintained by <a href="https://github.com/niutan">niutan</a>.</span>
+          //Defaults 
+          $.idTabs.settings = {
+            start: 0,
+            change: false,
+            click: null,
+            selected: ".selected",
+            event: "!click"
+          };
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+          //Version 
+          $.idTabs.version = "2.2";
 
-    </section>
+          //Auto-run 
+          $(function () { $(".idTabs").idTabs(); });
 
-  
-  </body>
+        })(jQuery);
+
+
+
+      } //init 
+
+      // Check Dependencies 
+      var check = function (o, s) {
+        s = s.split('.');
+        while (o && s.length) o = o[s.shift()];
+        return o;
+      }
+
+      // Add Script 
+      var head = document.getElementsByTagName("head")[0];
+      var add = function (url) {
+        var s = document.createElement("script");
+        s.type = "text/javascript"; s.src = url;
+        head.appendChild(s);
+      }
+
+      // Save Self 
+      var s = document.getElementsByTagName('script');
+      var src = s[s.length - 1].src;
+
+      // Load Dependencies 
+      var ok = true;
+      for (d in dep) {
+        if (check(this, d)) continue;
+        ok = false;
+        add(dep[d]);
+      } if (ok) return init();
+
+      // Reload Self 
+      add(src);
+
+    })();
+  </script>
+  <style type="text/css">
+    /** common **/
+    .xubox_shade, .xubox_layer {
+      position: fixed;
+      _position: absolute;
+    }
+
+    .xubox_shade {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      _height: expression(document.body.offsetHeight+"px");
+    }
+
+    .xubox_layer {
+      top: 150px;
+      left: 50%;
+      height: auto;
+      width: 310px;
+      margin-left: -155px;
+    }
+
+    .xubox_border, .xubox_title, .xubox_title i, .xubox_page, .xubox_iframe, .xubox_title em, .xubox_close, .xubox_msgico, .xubox_moves {
+      position: absolute;
+    }
+
+    .xubox_border {
+      border-radius: 5px;
+    }
+
+    .xubox_title {
+      left: 0;
+      top: 0;
+    }
+
+    .xubox_main {
+      position: relative;
+      height: 100%;
+      _float: left;
+    }
+
+    .xubox_page {
+      top: 0;
+      left: 0;
+    }
+
+    .xubox_load {
+      background: url('http://sentsin.com/lily/lib/layer/skin/default/xubox_loading0.gif') #fff center center no-repeat;
+    }
+
+    .xubox_loading {
+      display: block;
+      float: left;
+      text-decoration: none;
+      color: #FFF;
+      _float: none;
+    }
+
+    .xulayer_png32 {
+      background: url('http://sentsin.com/lily/lib/layer/skin/default/xubox_ico0.png') no-repeat;
+    }
+
+    .xubox_moves {
+      border: 3px solid #666;
+      cursor: move;
+      background-color: rgba(255,255,255,.3);
+      background-color: #fff\9;
+      filter: alpha(opacity=50);
+    }
+
+    .xubox_msgico {
+      width: 32px;
+      height: 32px;
+      top: 52px;
+      left: 15px;
+      background: url(default/xubox_ico0.png) no-repeat;
+    }
+
+    .xubox_text {
+      padding-left: 55px;
+      float: left;
+      line-height: 25px;
+      word-break: break-all;
+      padding-right: 20px;
+      overflow: hidden;
+      font-size: 14px;
+    }
+
+    .xubox_msgtype0 {
+      background-position: -91px -38px;
+    }
+
+    .xubox_msgtype1 {
+      background-position: -128px -38px;
+    }
+
+    .xubox_msgtype2 {
+      background-position: -163px -38px;
+    }
+
+    .xubox_msgtype3 {
+      background-position: -91px -75px;
+    }
+
+    .xubox_msgtype4 {
+      background-position: -163px -75px;
+    }
+
+    .xubox_msgtype5 {
+      background-position: -163px -112px;
+    }
+
+    .xubox_msgtype6 {
+      background-position: -163px -148px;
+    }
+
+    .xubox_msgtype7 {
+      background-position: -128px -75px;
+    }
+
+    .xubox_msgtype8 {
+      background-position: -91px -6px;
+    }
+
+    .xubox_msgtype9 {
+      background-position: -129px -6px;
+    }
+
+    .xubox_msgtype10 {
+      background-position: -163px -6px;
+    }
+
+    .xubox_msgtype11 {
+      background-position: -206px -6px;
+    }
+
+    .xubox_msgtype12 {
+      background-position: -206px -44px;
+    }
+
+    .xubox_msgtype13 {
+      background-position: -206px -81px;
+    }
+
+    .xubox_msgtype14 {
+      background-position: -206px -122px;
+    }
+
+    .xubox_msgtype15 {
+      background-position: -206px -157px;
+    }
+
+    .xubox_loading_0 {
+      width: 60px;
+      height: 24px;
+      background: url(default/xubox_loading0.gif) no-repeat;
+    }
+
+    .xubox_loading_1 {
+      width: 37px;
+      height: 37px;
+      background: url(default/xubox_loading1.gif) no-repeat;
+    }
+
+    .xubox_loading_2, .xubox_msgtype16 {
+      width: 32px;
+      height: 32px;
+      background: url(default/xubox_loading2.gif) no-repeat;
+    }
+
+    .xubox_loading_3 {
+      width: 126px;
+      height: 22px;
+      background: url(default/xubox_loading3.gif) no-repeat;
+    }
+
+    .xubox_setwin {
+      position: absolute;
+      right: 10px;
+      *right: 0;
+      top: 10px;
+      font-size: 0;
+    }
+
+      .xubox_setwin a {
+        position: relative;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+        width: 14px;
+        height: 14px;
+        margin-left: 10px;
+        font-size: 12px;
+        _overflow: hidden;
+      }
+
+      .xubox_setwin .xubox_min cite {
+        position: absolute;
+        width: 14px;
+        height: 2px;
+        left: 0;
+        top: 50%;
+        margin-top: -1px;
+        background-color: #919191;
+        cursor: pointer;
+        _overflow: hidden;
+      }
+
+      .xubox_setwin .xubox_min:hover cite {
+        background-color: #2D93CA;
+      }
+
+      .xubox_setwin .xubox_max {
+        background-position: -6px -189px;
+      }
+
+        .xubox_setwin .xubox_max:hover {
+          background-position: -6px -206px;
+        }
+
+      .xubox_setwin .xubox_maxmin {
+        background-position: -29px -189px;
+      }
+
+        .xubox_setwin .xubox_maxmin:hover {
+          background-position: -29px -206px;
+        }
+
+      .xubox_setwin .xubox_close0 {
+        width: 14px;
+        height: 14px;
+        background-position: -31px -7px;
+        cursor: pointer;
+      }
+
+        .xubox_setwin .xubox_close0:hover {
+          background-position: -51px -7px;
+        }
+
+      .xubox_setwin .xubox_close1 {
+        position: absolute;
+        right: -28px;
+        top: -28px;
+        width: 30px;
+        height: 30px;
+        margin-left: 0;
+        background-position: -60px -195px;
+        *right: -18px;
+        _right: -15px;
+        _top: -23px;
+        _width: 14px;
+        _height: 14px;
+        _background-position: -31px -7px;
+      }
+
+        .xubox_setwin .xubox_close1:hover {
+          background-position: -91px -195px;
+          _background-position: -51px -7px;
+        }
+
+    .xubox_title {
+      width: 100%;
+      height: 35px;
+      line-height: 35px;
+      border-bottom: 1px solid #D5D5D5;
+      background: url(default/xubox_title0.png) #EBEBEB repeat-x;
+      cursor: move;
+      font-size: 14px;
+      color: #333;
+    }
+
+      .xubox_title em {
+        height: 20px;
+        line-height: 20px;
+        width: 60%;
+        top: 7px;
+        left: 10px;
+        font-style: normal;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+    .xubox_botton a {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      background: url(default/xubox_ico0.png) repeat;
+      text-decoration: none;
+      color: #FFF;
+      font-size: 14px;
+      text-align: center;
+      font-weight: bold;
+      overflow: hidden;
+    }
+
+      .xubox_botton a:hover {
+        text-decoration: none;
+        color: #FFF;
+      }
+
+    .xubox_botton .xubox_botton1 {
+      width: 79px;
+      height: 32px;
+      line-height: 32px;
+      margin-left: -39px;
+      background-position: -6px -34px;
+    }
+
+    .xubox_botton1:hover {
+      background-position: -6px -72px;
+    }
+
+    .xubox_botton .xubox_botton2 {
+      margin-left: -76px;
+      width: 71px;
+      height: 29px;
+      line-height: 29px;
+      background-position: -5px -114px;
+    }
+
+    .xubox_botton2:hover {
+      background-position: -5px -146px;
+    }
+
+    .xubox_botton .xubox_botton3 {
+      width: 71px;
+      height: 29px;
+      line-height: 29px;
+      margin-left: 10px;
+      background-position: -81px -114px;
+    }
+
+    .xubox_botton3:hover {
+      background-position: -81px -146px;
+    }
+
+    .xubox_tips {
+      position: relative;
+      line-height: 20px;
+      min-width: 12px;
+      padding: 3px 30px 3px 10px;
+      font-size: 12px;
+      _float: left;
+      border-radius: 3px;
+      box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+    }
+
+      .xubox_tips i.layerTipsG {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-width: 8px;
+        border-color: transparent;
+        border-style: dashed;
+        *overflow: hidden;
+      }
+
+      .xubox_tips i.layerTipsT, .xubox_tips i.layerTipsB {
+        left: 5px;
+        border-right-style: solid;
+      }
+
+      .xubox_tips i.layerTipsT {
+        bottom: -8px;
+      }
+
+      .xubox_tips i.layerTipsB {
+        top: -8px;
+      }
+
+      .xubox_tips i.layerTipsR, .xubox_tips i.layerTipsL {
+        top: 1px;
+        border-bottom-style: solid;
+      }
+
+      .xubox_tips i.layerTipsR {
+        left: -8px;
+      }
+
+      .xubox_tips i.layerTipsL {
+        right: -8px;
+      }
+
+
+    /* Style for Usual tabs */
+    body {
+      background: #181818;
+    }
+
+    .usual {
+      background: #181818;
+      color: #111;
+      padding: 15px 20px;
+      width: 800px;
+      border: 1px solid #222;
+      margin: 8px auto;
+    }
+
+      .usual li {
+        list-style: none;
+        float: left;
+      }
+
+      .usual ul a {
+        display: block;
+        padding: 6px 10px;
+        text-decoration: none !important;
+        margin: 1px;
+        margin-left: 0;
+        font: 15px Verdana;
+        color: #FFF;
+        background: #444;
+      }
+
+        .usual ul a:hover {
+          color: #FFF;
+          background: #111;
+        }
+
+        .usual ul a.selected {
+          margin-bottom: 0;
+          color: #000;
+          background: snow;
+          border-bottom: 1px solid snow;
+          cursor: default;
+        }
+
+      .usual div {
+        padding: 10px 10px 8px 10px;
+        *padding-top: 3px;
+        *margin-top: -15px;
+        clear: left;
+        background: snow;
+        font: 10pt Georgia;
+      }
+
+        .usual div a {
+          color: #000;
+          font-weight: bold;
+        }
+
+    .topnav a {
+      float: right;
+    }
+
+    th {
+      background: #0066FF;
+      color: #FFFFFF;
+      line-height: 20px;
+      height: 30px;
+    }
+
+    tr {
+      line-height: 20px;
+      height: 30px;
+    }
+
+    td {
+      padding: 6px 11px;
+      border-bottom: 1px solid #95bce2;
+      vertical-align: top;
+      text-align: center;
+    }
+
+    tr.alt td {
+      background: #ecf6fc;
+    }
+
+    tr.over td {
+      background: #bcd4ec;
+    }
+
+    select {
+      background: #fafdfe;
+      height: 28px;
+      width: 50px;
+      line-height: 28px;
+      border: 1px solid #9bc0dd;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+    }
+
+    .popup {
+      display: none;
+      width: 600px;
+      height: 370px;
+      left: 50%;
+      width: 600px;
+    }
+
+      .popup div {
+        *padding-top: 3px;
+        *margin-top: -25px;
+      }
+
+      .popup pre {
+        margin: 5;
+        height: 300px;
+        background: white;
+        white-space: pre-wrap; /* css-3 */
+        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+        white-space: -pre-wrap; /* Opera 4-6 */
+        white-space: -o-pre-wrap; /* Opera 7 */
+        word-wrap: break-word; /* Internet Explorer 5.5+ */
+      }
+  </style>
+</head>
+<body>
+  <div class="usual popup">
+    <textarea id="result" rows="15" cols="70">我的选择是:</textarea>
+    <div><a href="#" id="copyToClip">复制</a>以上内容，提交到<a href="mailto:nxy0520@163.com">nxy0520@163.com</a></div>
+  </div>
+  <div class="usual">
+    <div class="topnav">
+      你还有<span id="total">100</span>个星星可以选。选完后，填写以下信息后提交：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+            <span>姓名</span>&nbsp;<input type='text' id='inputName'>&nbsp;&nbsp;<span>学号</span>&nbsp;<input type='text' id='inputId'><a href="#" id="submit">提交</a>
+    </div>
+    <ul>
+      <li><a class="selected" href="#tab1">工高课程</a></li>
+      <li><a href="#tab2">专业课</a></li>
+      <li><a href="#tab3">数学</a></li>
+      <li><a href="#tab4">英语</a></li>
+      <li><a href="#tab5">思政类</a></li>
+      <li><a href="#tab6">大类课程</a></li>
+      <li><a href="#tab7">人文读物</a></li>
+      <li><a href="#tab8">其他</a></li>
+    </ul>
+    <div class="grid" id="tab1">
+      <table>
+        <thead>
+          <th style="width: 300px">标题</th>
+          <th style="width: 200px">出版社/条形码编号</th>
+          <th style="width: 100px">作者</th>
+          <th style="width: 130px">书籍编号</th>
+          <th>选择</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="grid" id="tab2">
+      <table>
+        <thead>
+          <th style="width: 300px">标题</th>
+          <th style="width: 200px">出版社/条形码编号</th>
+          <th style="width: 100px">作者</th>
+          <th style="width: 130px">书籍编号</th>
+          <th>选择</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="grid" id="tab3">
+      <table>
+        <thead>
+          <th style="width: 300px">标题</th>
+          <th style="width: 200px">出版社/条形码编号</th>
+          <th style="width: 100px">作者</th>
+          <th style="width: 130px">书籍编号</th>
+          <th>选择</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="grid" id="tab4">
+      <table>
+        <thead>
+          <th style="width: 300px">标题</th>
+          <th style="width: 200px">出版社/条形码编号</th>
+          <th style="width: 100px">作者</th>
+          <th style="width: 130px">书籍编号</th>
+          <th>选择</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="grid" id="tab5">
+      <table>
+        <thead>
+          <th style="width: 300px">标题</th>
+          <th style="width: 200px">出版社/条形码编号</th>
+          <th style="width: 100px">作者</th>
+          <th style="width: 130px">书籍编号</th>
+          <th>选择</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="grid" id="tab6">
+      <table>
+        <thead>
+          <th style="width: 300px">标题</th>
+          <th style="width: 200px">出版社/条形码编号</th>
+          <th style="width: 100px">作者</th>
+          <th style="width: 130px">书籍编号</th>
+          <th>选择</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="grid" id="tab7">
+      <table>
+        <thead>
+          <th style="width: 300px">标题</th>
+          <th style="width: 200px">出版社/条形码编号</th>
+          <th style="width: 100px">作者</th>
+          <th style="width: 130px">书籍编号</th>
+          <th>选择</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="grid" id="tab8">
+      <table>
+        <thead>
+          <th style="width: 300px">标题</th>
+          <th style="width: 200px">出版社/条形码编号</th>
+          <th style="width: 100px">作者</th>
+          <th style="width: 130px">书籍编号</th>
+          <th>选择</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var data = [
+{'title':'大学物理（下册）', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'吴泽华', 'remark':'0101001'},
+{'title':'C程序设计', 'publisher':'清华大学出版社', 'category':'大类课程', 'author':'谭浩强', 'remark':'0101006'},
+{'title':'C语言程序设计', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'何钦铭', 'remark':'0101009'},
+{'title':'管理学', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'邢以群', 'remark':'0101017'},
+{'title':'大学物理（中册）', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'吴泽华', 'remark':'0101032'},
+{'title':'大学物理（中册）', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'吴泽华', 'remark':'0101053'},
+{'title':'C++编程思想', 'publisher':'机械工业出版社', 'category':'大类课程', 'author':'Bruce Eckel', 'remark':'0101055'},
+{'title':'大学物理（下册）', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'吴泽华', 'remark':'0101058'},
+{'title':'工程训练实训教程', 'publisher':'科学出版社', 'category':'大类课程', 'author':'周继烈', 'remark':'0101061'},
+{'title':'大学物理实验I', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'李海洋', 'remark':'0101062'},
+{'title':'管理学', 'publisher':'中国人民大学出版社', 'category':'大类课程', 'author':'斯蒂芬·P·罗宾斯', 'remark':'0101064'},
+{'title':'C程序设计', 'publisher':'清华大学出版社', 'category':'大类课程', 'author':'谭浩强', 'remark':'0101067'},
+{'title':'工程训练实训教程', 'publisher':'科学出版社', 'category':'大类课程', 'author':'周继烈', 'remark':'0101079'},
+{'title':'工程化学基础', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'陈林根', 'remark':'0101106'},
+{'title':'有机化学', 'publisher':'科学出版社', 'category':'大类课程', 'author':'徐伟亮', 'remark':'0101108'},
+{'title':'管理学', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'邢以群', 'remark':'0101109'},
+{'title':'大学物理学  力学、电磁学', 'publisher':'清华大学出版社', 'category':'大类课程', 'author':'张三慧', 'remark':'0101146'},
+{'title':'大学物理解题能力训练', 'publisher':'大连理工大学出版社', 'category':'大类课程', 'author':'余虹', 'remark':'0101148'},
+{'title':'音响技术与设备', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'程勇', 'remark':'0101153'},
+{'title':'管理学', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'邢以群', 'remark':'0101162'},
+{'title':'大学物理实验I', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'李海洋', 'remark':'0101163'},
+{'title':'排球', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'姚鸿芬', 'remark':'0101167'},
+{'title':'微观经济学教程', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'李建琴', 'remark':'0101184'},
+{'title':'宏观经济学教程', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'叶航', 'remark':'0101185'},
+{'title':'大学物理 下册', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'吴泽华', 'remark':'0201026'},
+{'title':'文科天文', 'publisher':'科学出版社', 'category':'大类课程', 'author':'苏宜', 'remark':'0201030'},
+{'title':'C程序设计基础 课程设计', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'何钦铭', 'remark':'0201039'},
+{'title':'逻辑学教程', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'胡龙彪', 'remark':'0201044'},
+{'title':'大学物理 中册', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'吴泽华', 'remark':'0201045'},
+{'title':'大学物理实验', 'publisher':'', 'category':'大类课程', 'author':'', 'remark':'0201046'},
+{'title':'动量、热量和质量传递原理', 'publisher':'化学工业出版社', 'category':'大类课程', 'author':'J.R.威尔特', 'remark':'0201056'},
+{'title':'健美操', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'朱晓龙', 'remark':'0201079'},
+{'title':'C语言程序设计', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'何钦铭', 'remark':'0201082'},
+{'title':'大学物理学学习辅导与习题解答', 'publisher':'清华大学出版社', 'category':'大类课程', 'author':'张三慧', 'remark':'0201083'},
+{'title':'文科天文', 'publisher':'科学出版社', 'category':'大类课程', 'author':'苏宜', 'remark':'0201085'},
+{'title':'桥牌入门', 'publisher':'人民体育出版社', 'category':'大类课程', 'author':'漆有光', 'remark':'0201086'},
+{'title':'社会性别研究导论', 'publisher':'北京大学出版社', 'category':'大类课程', 'author':'', 'remark':'0201087'},
+{'title':'探究心理的奥秘——心理学及应用', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'钟建安', 'remark':'0201089'},
+{'title':'摄像技术与DV制作', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'程勇', 'remark':'0201090'},
+{'title':'中国哲学教程', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'董平', 'remark':'0201091'},
+{'title':'大学物理 上册', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'吴泽华', 'remark':'0201098'},
+{'title':'心理卫生', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'王伟', 'remark':'0201103'},
+{'title':'全球化经济合作学', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'俞剑平', 'remark':'0201104'},
+{'title':'公共危机管理通论', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'胡税根', 'remark':'0201105'},
+{'title':'生命伦理学与生命法学', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'万慧进', 'remark':'0201112'},
+{'title':'文学与人生', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'黄健', 'remark':'0201114'},
+{'title':'心理卫生', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'王伟', 'remark':'0201116'},
+{'title':'生命科学导论实验', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'吴敏', 'remark':'0201117'},
+{'title':'让社会运转起来', 'publisher':'中国人民大学出版社', 'category':'大类课程', 'author':'郁建兴', 'remark':'0201118'},
+{'title':'中华茶文化', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'黄志根', 'remark':'0201120'},
+{'title':'初级法学论谈', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'陈小英', 'remark':'0201121'},
+{'title':'生物医学伦理学', 'publisher':'浙江教育出版社', 'category':'大类课程', 'author':'施卫星', 'remark':'0201122'},
+{'title':'伦理学概论', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'张应杭', 'remark':'0201123'},
+{'title':'公共营养学', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'李菊花', 'remark':'0201124'},
+{'title':'音响技术与设备', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'程勇', 'remark':'0201126'},
+{'title':'大学物理 下册', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'吴泽华', 'remark':'0201151'},
+{'title':'大学物理 下册', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'吴泽华', 'remark':'0201152'},
+{'title':'大学物理 中册', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'吴泽华', 'remark':'0201153'},
+{'title':'大学物理实验', 'publisher':'', 'category':'大类课程', 'author':'', 'remark':'0201159'},
+{'title':'大学物理答案 第一章——第五章', 'publisher':'', 'category':'大类课程', 'author':'', 'remark':'0201160'},
+{'title':'大学物理实验I', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'李海洋', 'remark':'0401001'},
+{'title':'数学物理方程', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'李胜宏', 'remark':'0401018'},
+{'title':'集成电子技术基础教程', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'郑佳龙', 'remark':'0401020'},
+{'title':'计算机二级C++模拟试卷', 'publisher':'电子工业出版社', 'category':'大类课程', 'author':'无', 'remark':'0401029'},
+{'title':'中级化学实验', 'publisher':'科学出版社', 'category':'大类课程', 'author':'雷群芳', 'remark':'0401030'},
+{'title':'C程序设计（第三版）', 'publisher':'清华大学出版社', 'category':'大类课程', 'author':'谭浩强', 'remark':'0401033'},
+{'title':'C程序设计基础 课程设计', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'张引', 'remark':'0401035'},
+{'title':'数学辅导讲义', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'苏德矿', 'remark':'0401036'},
+{'title':'概率论、数理统计与随机过程', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'黄伯琴', 'remark':'0401038'},
+{'title':'图学应用教程', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'陆国栋', 'remark':'0401040'},
+{'title':'C程序设计（第四版）', 'publisher':'9787302224464', 'category':'大类课程', 'author':'谭浩强', 'remark':'0401043'},
+{'title':'C语言程序设计', 'publisher':'9787040226058', 'category':'大类课程', 'author':'何钦铭，颜晖主编', 'remark':'0401044'},
+{'title':'C语言程序设计(第2版)', 'publisher':'9787040346725', 'category':'大类课程', 'author':'', 'remark':'0401045'},
+{'title':'C语言程序设计实验指导', 'publisher':'9787040231212', 'category':'大类课程', 'author':'', 'remark':'0401046'},
+{'title':'大学物理(中)', 'publisher':'9787308028578', 'category':'大类课程', 'author':'吴泽华', 'remark':'0401047'},
+{'title':'大学物理学(第三版)学习辅导与习题解答', 'publisher':'9787302195856', 'category':'大类课程', 'author':'张三慧', 'remark':'0401048'},
+{'title':'大学物理学(第三版)学习辅导与习题解答', 'publisher':'9787302195856', 'category':'大类课程', 'author':'张三慧', 'remark':'0401049'},
+{'title':'大学物理知识点精析与解题能力训练（高等学校物理学习辅导教材）', 'publisher':'9787561118436', 'category':'大类课程', 'author':'余虹', 'remark':'0401050'},
+{'title':'概率论与数理统计(浙大第3版)', 'publisher':'9787040101553', 'category':'大类课程', 'author':'盛骤等编', 'remark':'0401051'},
+{'title':'画法几何解题分析与指导', 'publisher':'9787560826516', 'category':'大类课程', 'author':'顾文逵缪三国', 'remark':'0401052'},
+{'title':'军事学概论(修订本)', 'publisher':'9787308027168', 'category':'大类课程', 'author':'褚良才主编', 'remark':'0401053'},
+{'title':'军事学概论(修订本)', 'publisher':'9787308027168', 'category':'大类课程', 'author':'褚良才主编', 'remark':'0401054'},
+{'title':'军事学概论(修订本)', 'publisher':'9787308027168', 'category':'大类课程', 'author':'褚良才主编', 'remark':'0401055'},
+{'title':'生命科学导论（公共课）', 'publisher':'9787040079586', 'category':'大类课程', 'author':'张惟杰', 'remark':'0401056'},
+{'title':'乒乓球', 'publisher':'9787040150650', 'category':'大类课程', 'author':'俞蕙琳主编', 'remark':'0401057'},
+{'title':'生命科学导论（第2版）', 'publisher':'9787040200775', 'category':'大类课程', 'author':'', 'remark':'0401058'},
+{'title':'生命科学导论（第2版）', 'publisher':'9787040200775', 'category':'大类课程', 'author':'', 'remark':'0401059'},
+{'title':'普通物理、大学物理', 'publisher':'9787030174710', 'category':'大类课程', 'author':'', 'remark':'0401060'},
+{'title':'生命科学导论实验', 'publisher':'9787040223279', 'category':'大类课程', 'author':'吴敏', 'remark':'0401061'},
+{'title':'生物医学测量与仪器', 'publisher':'9787309064506', 'category':'大类课程', 'author':'王保华主编', 'remark':'0401062'},
+{'title':'现代西方经济学习题指南(微观经济学)第六版', 'publisher':'9787309026818', 'category':'大类课程', 'author':'尹伯成主编', 'remark':'0401063'},
+{'title':'新编普通化学（第二版）', 'publisher':'9787030340382', 'category':'大类课程', 'author':'', 'remark':'0401064'},
+{'title':'新编普通化学（第二版）', 'publisher':'9787030340382', 'category':'大类课程', 'author':'', 'remark':'0401065'},
+{'title':'新世纪计算机基础教育丛书（谭浩强主编）-C程序设计试题汇编（第二版）', 'publisher':'9787302120025', 'category':'大类课程', 'author':'谭浩强', 'remark':'0401066'},
+{'title':'中级化学实验--21世纪高等院校教材', 'publisher':'9787030149190', 'category':'大类课程', 'author':'雷群芳', 'remark':'0401067'},
+{'title':'C语言程序设计实验指导', 'publisher':'9787040231212', 'category':'大类课程', 'author':'', 'remark':'0401068'},
+{'title':'工程物理学  第二版', 'publisher':'9787308032544', 'category':'大类课程', 'author':'诸葛向彬', 'remark':'0401069'},
+{'title':'画法几何习题集（第三版）', 'publisher':'9787560816777', 'category':'大类课程', 'author':'同济大学建筑制图考研室 编', 'remark':'0401070'},
+{'title':'基础生命科学-(第2版)', 'publisher':'9787040191998', 'category':'大类课程', 'author':'吴庆余', 'remark':'0401071'},
+{'title':'基础生命科学-(第2版)', 'publisher':'9787040191998', 'category':'大类课程', 'author':'吴庆余', 'remark':'0401072'},
+{'title':'生命科学导论（第2版）（附赠VCD光盘1张）', 'publisher':'9787040200775', 'category':'大类课程', 'author':'', 'remark':'0401073'},
+{'title':'图学应用教程（第2版）', 'publisher':'9787040294934', 'category':'大类课程', 'author':'', 'remark':'0401074'},
+{'title':'图学基础教程（第2版）', 'publisher':'9787040192124', 'category':'大类课程', 'author':'', 'remark':'0401075'},
+{'title':'图学基础教程习题集（第2版）', 'publisher':'9787040192117', 'category':'大类课程', 'author':'谭建荣等编', 'remark':'0401076'},
+{'title':'物理学教程（第二版）下册（加盛世畅想数码防伪标）', 'publisher':'9787040200584', 'category':'大类课程', 'author':'马文蔚', 'remark':'0401077'},
+{'title':'新编普通化学', 'publisher':'9787030138712', 'category':'大类课程', 'author':'徐端钧，陈恒武，李浩然', 'remark':'0401078'},
+{'title':'C语言程序设计', 'publisher':'', 'category':'大类课程', 'author':'王庆诞 姚华', 'remark':'0401079'},
+{'title':'大学物理学(第三版)学习辅导与习题解答', 'publisher':'', 'category':'大类课程', 'author':'张三慧', 'remark':'0401080'},
+{'title':'大学物理（中册）', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'', 'remark':'0501001'},
+{'title':'大学物理（下册）', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'', 'remark':'0501002'},
+{'title':'常微分方程', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'', 'remark':'0501003'},
+{'title':'复变函数与拉普拉斯变换', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'金忆丹', 'remark':'0501023'},
+{'title':'大学物理（中册）', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'', 'remark':'0501035'},
+{'title':'大学物理上', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'吴泽华', 'remark':'0601002'},
+{'title':'大学物理中', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'吴泽华', 'remark':'0601003'},
+{'title':'大学物理下', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':' ', 'remark':'0601004'},
+{'title':'篮球', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'张林', 'remark':'0601005'},
+{'title':'军事理论', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'褚良才', 'remark':'0601006'},
+{'title':'管理学', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'刑以群', 'remark':'0601007'},
+{'title':'生命科学导论', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'张惟杰', 'remark':'0601008'},
+{'title':'大学物理实验', 'publisher':'浙江大学物理实验教学中心', 'category':'大类课程', 'author':'', 'remark':'0601009'},
+{'title':'西方文明史纲', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'董小燕', 'remark':'0601011'},
+{'title':'探索心理的奥秘---心理学及应用', 'publisher':'浙江大学出版社', 'category':'大类课程', 'author':'钟建安', 'remark':'0601012'},
+{'title':'物流学', 'publisher':'清华大学出版社', 'category':'大类课程', 'author':'David J.Bloomberg Stephen Lemay Joe B.Hanna', 'remark':'0601013'},
+{'title':'大学物理下', 'publisher':'', 'category':'大类课程', 'author':'', 'remark':'0601014'},
+{'title':'军理课本', 'publisher':'', 'category':'大类课程', 'author':'', 'remark':'0601015'},
+{'title':'电子设计实践指南', 'publisher':'9787040369106', 'category':'大类课程', 'author':'暂无数据', 'remark':'0701003'},
+{'title':'化工原理（第二版）（下册）', 'publisher':'9787030191519', 'category':'大类课程', 'author':'何潮洪、冯霄', 'remark':'0701017'},
+{'title':'电路原理-第3版', 'publisher':'9787111286325', 'category':'大类课程', 'author':'范承志等编著', 'remark':'0701021'},
+{'title':'单片机初级教程--单片机基础（第二版）', 'publisher':'9787810778411', 'category':'大类课程', 'author':'张迎新', 'remark':'0701023'},
+{'title':'过程工程原理实验乙', 'publisher':'', 'category':'大类课程', 'author':'', 'remark':'0701027'},
+{'title':'大学化学实验', 'publisher':'', 'category':'大类课程', 'author':'何巧红', 'remark':'0701029'},
+{'title':'电子系统设计', 'publisher':'', 'category':'大类课程', 'author':'何小艇', 'remark':'0701030'},
+{'title':'浙江大学卓越工程师教育培养计划实录', 'publisher':'', 'category':'大类课程', 'author':'', 'remark':'0701033'},
+{'title':'微积分(下)/浙江大学数学系列丛书', 'publisher':'9787308057974', 'category':'大类课程', 'author':'浙江大学数学系列丛书', 'remark':'0901001'},
+{'title':'常微分方程(作者:蔡燧林 编) {出版社:浙江大学出版社}', 'publisher':'9787308000574', 'category':'大类课程', 'author':'蔡燧林编', 'remark':'0901005'},
+{'title':'管理学', 'publisher':'高等教育出版社', 'category':'大类课程', 'author':'邢以群', 'remark':'0901010'},
+{'title':'数学分析（英文版）（第2版）', 'publisher':'9787111146896', 'category':'大类课程', 'author':'[美]TomM.Apostol著', 'remark':'0901012'},
+{'title':'单片微型计算机原理与接口技术', 'publisher':'9787030185778', 'category':'大类课程', 'author':'桂迎编', 'remark':'0901014'},
+{'title':'普通高等教育“十五”国家级规划教材：大学数学（代数与几何）', 'publisher':'9787040119114', 'category':'大类课程', 'author':'布莱恩特，（美）奥哈拉伦', 'remark':'0901019'},
+{'title':'"动量、热量和质量传递原理', 'publisher':'9787502572310', 'category':'大类课程', 'author':'张宏建等编', 'remark':'0901023'},
+{'title':'高等院校机械工程系列教材：机械设计', 'publisher':'9787308072984', 'category':'大类课程', 'author':'', 'remark':'0901029'},
+{'title':'微处理机原理与接口技术', 'publisher':'9787308061599', 'category':'大类课程', 'author':'《大学数学》编辑部编', 'remark':'0901032'},
+{'title':'数学建模', 'publisher':'浙江大学出版社', 'category':'工高课程', 'author':'杨启帆', 'remark':'0102003'},
+{'title':'Introduction to Engineering Design', 'publisher':'', 'category':'工高课程', 'author':'', 'remark':'0102039'},
+{'title':'Inreoductionto Engineering Design', 'publisher':'', 'category':'工高课程', 'author':'', 'remark':'0102060'},
+{'title':'数据结构与算法分析', 'publisher':'机械工业出版社', 'category':'工高课程', 'author':'Mark Allen Weiss', 'remark':'0102070'},
+{'title':'Inreoductionto Engineering Design', 'publisher':'', 'category':'工高课程', 'author':'', 'remark':'0102082'},
+{'title':'工程导论学习手册', 'publisher':'', 'category':'工高课程', 'author':'', 'remark':'0102094'},
+{'title':'数学建模', 'publisher':'浙江大学出版社', 'category':'工高课程', 'author':'杨启帆', 'remark':'0102105'},
+{'title':'数据结构与算法分析（英文版）', 'publisher':'人民邮电出版社', 'category':'工高课程', 'author':'Mark Allen Weiss', 'remark':'0102107'},
+{'title':'数学建模', 'publisher':'浙江大学出版社', 'category':'工高课程', 'author':'杨启帆', 'remark':'0102111'},
+{'title':'数学建模', 'publisher':'浙江大学出版社', 'category':'工高课程', 'author':'杨启帆', 'remark':'0102156'},
+{'title':'美国大学生数学建模竞赛优秀论文集', 'publisher':'', 'category':'工高课程', 'author':'', 'remark':'0102159'},
+{'title':'Inreoductionto Engineering Design', 'publisher':'', 'category':'工高课程', 'author':'', 'remark':'0102160'},
+{'title':'数学建模', 'publisher':'浙江大学出版社', 'category':'工高课程', 'author':'杨启帆', 'remark':'0102161'},
+{'title':'数学建模', 'publisher':'浙江大学出版社', 'category':'工高课程', 'author':'杨启帆', 'remark':'0102179'},
+{'title':'工磁 熊素铭 ppt', 'publisher':'', 'category':'工高课程', 'author':'', 'remark':'0202080'},
+{'title':'管理学', 'publisher':'中国人民大学出版社', 'category':'工高课程', 'author':'', 'remark':'0202084'},
+{'title':'Introduction to Engineering Design', 'publisher':'', 'category':'工高课程', 'author':'', 'remark':'0202140'},
+{'title':'数学建模', 'publisher':'浙江大学出版社', 'category':'工高课程', 'author':'杨启帆', 'remark':'0202143'},
+{'title':'Introduction to Engineering Design', 'publisher':'', 'category':'工高课程', 'author':'', 'remark':'0202146'},
+{'title':'Introduction to Engineering Design', 'publisher':'', 'category':'工高课程', 'author':'', 'remark':'0202156'},
+{'title':'数学建模', 'publisher':'浙江大学出版社', 'category':'工高课程', 'author':'谈之奕', 'remark':'0402037'},
+{'title':'数学模型', 'publisher':'高等教育出版社', 'category':'工高课程', 'author':'姜启源', 'remark':'0402039'},
+{'title':'数学模型习题参考解答(第3版)(大学数学学习辅导丛书)', 'publisher':'9787040119459', 'category':'工高课程', 'author':'', 'remark':'0402081'},
+{'title':'数学建模', 'publisher':'9787308021395', 'category':'工高课程', 'author':'', 'remark':'0402082'},
+{'title':'系统工程', 'publisher':'9787111125372', 'category':'工高课程', 'author':'汪应洛', 'remark':'0402083'},
+{'title':'系统工程', 'publisher':'9787111125372', 'category':'工高课程', 'author':'汪应洛', 'remark':'0402084'},
+{'title':'精通MATLAB6.5', 'publisher':'中国水利水电出版社', 'category':'工高课程', 'author':'张瑞丰', 'remark':'0502017'},
+{'title':'当代电影思潮', 'publisher':'浙江大学出版社', 'category':'工高课程', 'author':'范志忠', 'remark':'0503019'},
+{'title':'四书章句集注', 'publisher':'中华书局', 'category':'工高课程', 'author':'', 'remark':'0503021'},
+{'title':'大学语文', 'publisher':'浙江大学出版社', 'category':'工高课程', 'author':'张梦新', 'remark':'0503022'},
+{'title':'数学建模', 'publisher':'浙江大学出版社', 'category':'工高课程', 'author':'杨启帆', 'remark':'0602001'},
+{'title':'动量、热量和质量传递原理', 'publisher':'化学工业出版社', 'category':'工高课程', 'author':'J.R.威尔特 C.E.威克斯', 'remark':'0602002'},
+{'title':'MAXWELL EQUATIONS', 'publisher':'EMW Publishing Cambridge,Massachusetts,USA ', 'category':'工高课程', 'author':'JIN AU KONG', 'remark':'0602003'},
+{'title':'工原二参考资料', 'publisher':'文印店', 'category':'工高课程', 'author':'', 'remark':'0602004'},
+{'title':'动量、热量和质量传递原理', 'publisher':'化学工业出版社', 'category':'工高课程', 'author':'J.R.威尔特 C.E.威克斯', 'remark':'0602005'},
+{'title':'电机学（含拖动部分）', 'publisher':'西安交通大学出版社', 'category':'工高课程', 'author':'阎治安 崔新艺 商晓梅', 'remark':'0602006'},
+{'title':'数据结构与算法分析:C语言描述:英文版', 'publisher':'9787115139849', 'category':'工高课程', 'author':'美﹒﹒ 编', 'remark':'0702015'},
+{'title':'数学建模', 'publisher':'9787308021395', 'category':'工高课程', 'author':'', 'remark':'0902026'},
+{'title':'数据结构与算法分析:C语言描述', 'publisher':'9787111127482', 'category':'工高课程', 'author':'', 'remark':'0902037'},
+{'title':'Simulink建模与仿真', 'publisher':'', 'category':'工高课程', 'author':'2003年第5期', 'remark':'0902046'},
+{'title':'科学与生活', 'publisher':'山东大学出版社', 'category':'人文读物', 'author':'谢玉群', 'remark':'0103015'},
+{'title':'Photoshop CS5完全自学教程', 'publisher':'人民邮电出版社', 'category':'人文读物', 'author':'李金明', 'remark':'0103023'},
+{'title':'初级法学论谈', 'publisher':'浙江大学出版社', 'category':'人文读物', 'author':'陈小英', 'remark':'0103040'},
+{'title':'电脑爱好者', 'publisher':'', 'category':'人文读物', 'author':'齐书阳', 'remark':'0103048'},
+{'title':'电脑爱好者', 'publisher':'', 'category':'人文读物', 'author':'齐书阳', 'remark':'0103051'},
+{'title':'西方经济学', 'publisher':'中国人民大学出版社', 'category':'人文读物', 'author':'高鸿业', 'remark':'0103054'},
+{'title':'影响力', 'publisher':'万卷出版公司', 'category':'人文读物', 'author':'罗伯特·西奥迪尼', 'remark':'0103074'},
+{'title':'网上创业', 'publisher':'机械工业出版社', 'category':'人文读物', 'author':'机械工业出版社', 'remark':'0103076'},
+{'title':'Biography Barack Obama', 'publisher':'', 'category':'人文读物', 'author':'Stephen Krensky', 'remark':'0103083'},
+{'title':'笛卡尔的秘密手记', 'publisher':'人民出版社', 'category':'人文读物', 'author':'阿米尔·艾克赛尔', 'remark':'0103084'},
+{'title':'生命科学导论', 'publisher':'高等教育出版社', 'category':'人文读物', 'author':'张惟杰', 'remark':'0103112'},
+{'title':'智慧与正义', 'publisher':'浙江大学出版社', 'category':'人文读物', 'author':'张国清', 'remark':'0103117'},
+{'title':'环境科学与人类文明', 'publisher':'浙江大学出版社', 'category':'人文读物', 'author':'刘维屏', 'remark':'0103119'},
+{'title':'生命科学导论', 'publisher':'高等教育出版社', 'category':'人文读物', 'author':'张惟杰', 'remark':'0103123'},
+{'title':'世界经济概论', 'publisher':'高等教育出版社', 'category':'人文读物', 'author':'池元吉', 'remark':'0103135'},
+{'title':'中国近现代史纲要', 'publisher':'高等教育出版社', 'category':'人文读物', 'author':'', 'remark':'0103150'},
+{'title':'自私的基因', 'publisher':'中信出版社', 'category':'人文读物', 'author':'理查德·道金斯', 'remark':'0103152'},
+{'title':'初级法学论谈', 'publisher':'浙江大学出版社', 'category':'人文读物', 'author':'陈小英', 'remark':'0103154'},
+{'title':'茶与健康', 'publisher':'中国出版集团', 'category':'人文读物', 'author':'屠幼英', 'remark':'0103164'},
+{'title':'体验的智慧', 'publisher':'浙江大学出版社', 'category':'人文读物', 'author':'车建新', 'remark':'0103165'},
+{'title':'纸牌的秘密', 'publisher':'作家出版社', 'category':'人文读物', 'author':'乔斯坦·贾德', 'remark':'0103166'},
+{'title':'外国音乐欣赏', 'publisher':'浙江大学出版社', 'category':'人文读物', 'author':'张重辉', 'remark':'0103168'},
+{'title':'福尔摩斯探案精选', 'publisher':'上海译文出版社', 'category':'人文读物', 'author':'柯南·道尔', 'remark':'0103169'},
+{'title':'科学与生活', 'publisher':'山东大学出版社', 'category':'人文读物', 'author':'谢玉群', 'remark':'0103172'},
+{'title':'生命科学导论', 'publisher':'高等教育出版社', 'category':'人文读物', 'author':'张惟杰', 'remark':'0103176'},
+{'title':'多人协作效率提升秘笈', 'publisher':'', 'category':'人文读物', 'author':'', 'remark':'0203017'},
+{'title':'Culture in Language', 'publisher':'河南人民出版社', 'category':'人文读物', 'author':'马玉梅', 'remark':'0203043'},
+{'title':'读者', 'publisher':'', 'category':'人文读物', 'author':'', 'remark':'0203060'},
+{'title':'博弈论是什么玩意儿', 'publisher':'华中科技大学出版社', 'category':'人文读物', 'author':'石雨祺', 'remark':'0203063'},
+{'title':'社会学', 'publisher':'浙江大学出版社', 'category':'人文读物', 'author':'冯钢', 'remark':'0203066'},
+{'title':'大学新生 赢在起跑线上', 'publisher':'华中师范大学出版社', 'category':'人文读物', 'author':'常桦', 'remark':'0203074'},
+{'title':'茶与健康', 'publisher':'中国出版集团', 'category':'人文读物', 'author':'屠幼英', 'remark':'0203075'},
+{'title':'你的误区 如何摆脱负面思维掌控你的生活', 'publisher':'群言出版社', 'category':'人文读物', 'author':'', 'remark':'0203092'},
+{'title':'看历史', 'publisher':'', 'category':'人文读物', 'author':'', 'remark':'0203093'},
+{'title':'人生若如初见', 'publisher':'天津教育出版社', 'category':'人文读物', 'author':'安意如', 'remark':'0203097'},
+{'title':'起风了', 'publisher':'新星出版社', 'category':'人文读物', 'author':'宫崎骏', 'remark':'0203106'},
+{'title':'直通美国', 'publisher':'天道国际教育集团', 'category':'人文读物', 'author':'', 'remark':'0203110'},
+{'title':'一口气读完日本史', 'publisher':'京华出版社', 'category':'人文读物', 'author':'孙秀玲', 'remark':'0203111'},
+{'title':'少年维特的烦恼', 'publisher':'漓江出版社', 'category':'人文读物', 'author':'歌德', 'remark':'0203113'},
+{'title':'欧.亨利中短篇小说选', 'publisher':'长江文艺出版社', 'category':'人文读物', 'author':'欧.亨利', 'remark':'0203115'},
+{'title':'首先，打破一切常规', 'publisher':'中国青年出版社', 'category':'人文读物', 'author':'马库斯.白金汉', 'remark':'0203119'},
+{'title':'瓦尔登湖', 'publisher':'上海译文出版社', 'category':'人文读物', 'author':'亨利.戴维.梭罗', 'remark':'0203125'},
+{'title':'大傻飞跃GOER 2012/9月', 'publisher':'', 'category':'人文读物', 'author':'', 'remark':'0203127'},
+{'title':'大傻飞跃GOER 2012/6月', 'publisher':'', 'category':'人文读物', 'author':'', 'remark':'0203128'},
+{'title':'大问题——简明哲学导论', 'publisher':'广西师范大学出版社', 'category':'人文读物', 'author':'罗伯特 所罗门', 'remark':'0403009'},
+{'title':'公共营养学', 'publisher':'9787308044127', 'category':'人文读物', 'author':'李菊花主编', 'remark':'0403085'},
+{'title':'环境科学与人类文明', 'publisher':'9787308029346', 'category':'人文读物', 'author':'刘维屏，刘广深主编', 'remark':'0403086'},
+{'title':'美国总统罗曼史', 'publisher':'9787206030406', 'category':'人文读物', 'author':'考索恩', 'remark':'0403087'},
+{'title':'人生美学', 'publisher':'9787308036177', 'category':'人文读物', 'author':'张应杭', 'remark':'0403088'},
+{'title':'西方文明史纲', 'publisher':'9787308028448', 'category':'人文读物', 'author':'董小燕', 'remark':'0403089'},
+{'title':'西方哲学简史 赵敦华 北京大学出版社 (2001-01出版)', 'publisher':'9787301045107', 'category':'人文读物', 'author':'北京大学', 'remark':'0403090'},
+{'title':'新政治经济学评论:13', 'publisher':'9787308071192', 'category':'人文读物', 'author':'汪丁丁 主 ', 'remark':'0403091'},
+{'title':'中国传统文化概论', 'publisher':'9787308061827', 'category':'人文读物', 'author':'', 'remark':'0403092'},
+{'title':'自然资源学基本原理', 'publisher':'9787030253095', 'category':'人文读物', 'author':'', 'remark':'0403093'},
+{'title':'组织行为学（精要版）（原书第11版）', 'publisher':'9787111353386', 'category':'人文读物', 'author':'郑晓明', 'remark':'0403094'},
+{'title':'大学摄影基础教程', 'publisher':'9787806864098', 'category':'人文读物', 'author':'彭国平张宗寿 编', 'remark':'0403095'},
+{'title':'公共经济学理论与应用', 'publisher':'9787040214949', 'category':'人文读物', 'author':'朱柏铭', 'remark':'0403096'},
+{'title':'环境科学与人类文明', 'publisher':'9787308029346', 'category':'人文读物', 'author':'刘维屏，刘广深主编', 'remark':'0403097'},
+{'title':'伦理学概论', 'publisher':'9787308068949', 'category':'人文读物', 'author':'', 'remark':'0403098'},
+{'title':'品中国文人2', 'publisher':'9787532133321', 'category':'人文读物', 'author':'刘小川', 'remark':'0403099'},
+{'title':'文明的历程', 'publisher':'9787308047456', 'category':'人文读物', 'author':'沈坚著', 'remark':'0403100'},
+{'title':'物理学与人类文明/科学与人类文明丛书', 'publisher':'9787308025874', 'category':'人文读物', 'author':'盛正卯等编', 'remark':'0403101'},
+{'title':'西方文学中的跨文化交流(大学生通识教育)', 'publisher':'9787308056052', 'category':'人文读物', 'author':'潘一禾', 'remark':'0403102'},
+{'title':'校园戏剧', 'publisher':'9787308045766', 'category':'人文读物', 'author':'桂迎编', 'remark':'0403103'},
+{'title':'新政治经济学评论11', 'publisher':'9787308064835', 'category':'人文读物', 'author':'汪丁丁', 'remark':'0403104'},
+{'title':'生命科学导论', 'publisher':'高等教育出版社', 'category':'人文读物', 'author':'张惟杰', 'remark':'0503015'},
+{'title':'走在山坡上的中国', 'publisher':'红旗出版社', 'category':'人文读物', 'author':'王永昌', 'remark':'0603001'},
+{'title':'世界上最经典动人的美文', 'publisher':'天津科技出版社', 'category':'人文读物', 'author':'陈书凯', 'remark':'0603002'},
+{'title':'文明的历程', 'publisher':'浙江大学出版社', 'category':'人文读物', 'author':'沈坚', 'remark':'0603003'},
+{'title':'正能量Rip It Up', 'publisher':'湖南文艺出版社', 'category':'人文读物', 'author':'理查德 怀斯曼', 'remark':'0603004'},
+{'title':'常识', 'publisher':'广西师范大学出版社', 'category':'人文读物', 'author':'梁文道', 'remark':'0603005'},
+{'title':'校园戏剧', 'publisher':'9787308045766', 'category':'人文读物', 'author':'叶挺秀', 'remark':'0903015'},
+{'title':'世界文学史/浙江省高等教育重点教材', 'publisher':'9787308047579', 'category':'人文读物', 'author':'宋兆基，徐流美等编著', 'remark':'0903021'},
+{'title':'浙江大学SRTP指南', 'publisher':'', 'category':'人文读物', 'author':'李兴根', 'remark':'0903064'},
+{'title':'GRE数学', 'publisher':'群言出版社', 'category':'数学', 'author':'Robert E.Moyer.', 'remark':'0104013'},
+{'title':'微积分解题方法与技巧', 'publisher':'北京大学出版社', 'category':'数学', 'author':'刘书田', 'remark':'0104016'},
+{'title':'新GRE数学教程', 'publisher':'研究生院入学指导', 'category':'数学', 'author':'', 'remark':'0104020'},
+{'title':'微积分学习释疑解难', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'苏德矿', 'remark':'0104038'},
+{'title':'高等数学竞赛教程', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'卢兴江', 'remark':'0104097'},
+{'title':'高等数学竞赛教程', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'卢兴江', 'remark':'0104110'},
+{'title':'数学分析下册（第三版）', 'publisher':'高等教育出版社', 'category':'数学', 'author':'华东师范大学数学系', 'remark':'0104118'},
+{'title':'微积分习题解答（上）', 'publisher':'浙大数学系', 'category':'数学', 'author':'苏德矿', 'remark':'0104155'},
+{'title':'数学物理方程学习指导与习题解答', 'publisher':'清华大学出版社', 'category':'数学', 'author':'王明新', 'remark':'0104171'},
+{'title':'数学分析习题集', 'publisher':'高等教育出版社', 'category':'数学', 'author':'吉米多维奇', 'remark':'0104180'},
+{'title':'数学模型', 'publisher':'高等教育出版社', 'category':'数学', 'author':'姜启源', 'remark':'0104181'},
+{'title':'离散数学及其应用', 'publisher':'机械工业出版社', 'category':'数学', 'author':'Kenneth H.Rosen', 'remark':'0104182'},
+{'title':'数学规划与组合优化', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'姚恩瑜', 'remark':'0104183'},
+{'title':'麦克斯韦方程', 'publisher':'', 'category':'数学', 'author':'', 'remark':'0104186'},
+{'title':'数学分析 上册', 'publisher':'高等教育出版社', 'category':'数学', 'author':'编写组', 'remark':'0204027'},
+{'title':'运筹学教程', 'publisher':'清华大学出版社', 'category':'数学', 'author':'胡运权', 'remark':'0204031'},
+{'title':'数学分析 上册', 'publisher':'高等教育出版社', 'category':'数学', 'author':'华东师范大学数学系', 'remark':'0204047'},
+{'title':'数学分析辅导及习题精解', 'publisher':'延边大学出版社', 'category':'数学', 'author':'张天德', 'remark':'0204048'},
+{'title':'数学分析中的经典问题与方法', 'publisher':'高等教育出版社', 'category':'数学', 'author':'裴礼文', 'remark':'0204050'},
+{'title':'2008年美国大学生数学建模竞赛与交叉学科竞赛优秀论文集', 'publisher':'', 'category':'数学', 'author':'', 'remark':'0204058'},
+{'title':'2002年美国大学生数学建模竞赛优秀论文集', 'publisher':'', 'category':'数学', 'author':'', 'remark':'0204059'},
+{'title':'硕士研究生入学考试数学习题精解', 'publisher':'合肥工业大学出版社', 'category':'数学', 'author':'', 'remark':'0204065'},
+{'title':'概率论、数理统计与随机过程', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'张帼奋', 'remark':'0204067'},
+{'title':'数学分析习题集精选精解', 'publisher':'山东科技大学出版社', 'category':'数学', 'author':'费定晖', 'remark':'0204068'},
+{'title':'数学建模', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'杨启帆', 'remark':'0204076'},
+{'title':'常微分方程', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'蔡燧林', 'remark':'0204077'},
+{'title':'数学建模竞赛——浙江大学学生获奖论文点评', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'杨启帆', 'remark':'0204099'},
+{'title':'概率论、数理统计与随机过程', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'张帼奋', 'remark':'0204139'},
+{'title':'硕士研究入学考试数学试题精解', 'publisher':'合肥工业大学出版社', 'category':'数学', 'author':'', 'remark':'0204142'},
+{'title':'复变函数与拉普拉斯变换', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'金忆丹', 'remark':'0204147'},
+{'title':'复变函数与拉普拉斯变换 习题指导', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'金忆丹', 'remark':'0204148'},
+{'title':'概率论与数理统计', 'publisher':'高等教育出版社', 'category':'数学', 'author':'盛骤', 'remark':'0204150'},
+{'title':'常微分方程(作者:蔡燧林 编)', 'publisher':'9787308000574', 'category':'数学', 'author':'蔡燧林编', 'remark':'0404105'},
+{'title':'常微分方程(作者:蔡燧林 编)', 'publisher':'9787308000574', 'category':'数学', 'author':'蔡燧林编', 'remark':'0404106'},
+{'title':'常微分方程(作者:蔡燧林 编)', 'publisher':'9787308000574', 'category':'数学', 'author':'蔡燧林编', 'remark':'0404107'},
+{'title':'常微分方程(作者:蔡燧林 编)', 'publisher':'9787308000574', 'category':'数学', 'author':'蔡燧林编', 'remark':'0404108'},
+{'title':'樊博头考研系列·2011全国硕士研究生入学统一考试：数学辅导讲义（理工类）', 'publisher':'9787308066952', 'category':'数学', 'author':'', 'remark':'0404109'},
+{'title':'硕士研究生入学考试数学试题精解（2009年第7次印刷）', 'publisher':'9787810930390', 'category':'数学', 'author':'《大学数学》编辑部编', 'remark':'0404110'},
+{'title':'线性代数(第二版)', 'publisher':'9787030184405', 'category':'数学', 'author':'陈维新', 'remark':'0404111'},
+{'title':'樊博头考研系列·2011全国硕士研究生入学统一考试：数学辅导讲义（理工类）', 'publisher':'9787308066952', 'category':'数学', 'author':'', 'remark':'0404112'},
+{'title':'普通高等教育“十五”国家级规划教材：大学数学（代数与几何）', 'publisher':'9787040119114', 'category':'数学', 'author':'', 'remark':'0404113'},
+{'title':'数学与人类文明', 'publisher':'9787308057516', 'category':'数学', 'author':'', 'remark':'0404114'},
+{'title':'硕士研究生入学考试数学试题精解（2009年第7次印刷）', 'publisher':'9787810930390', 'category':'数学', 'author':'《大学数学》编辑部编', 'remark':'0404115'},
+{'title':'微积分答案（上下）', 'publisher':'', 'category':'数学', 'author':'', 'remark':'0504026'},
+{'title':'排序引论', 'publisher':'科学出版社', 'category':'数学', 'author':'唐恒永', 'remark':'0504027'},
+{'title':'数理统计', 'publisher':'科学出版社', 'category':'数学', 'author':'韦来生', 'remark':'0604001'},
+{'title':'随机过程', 'publisher':'科学出版社', 'category':'数学', 'author':'方兆本 繆柏其', 'remark':'0604002'},
+{'title':'概率论', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'林正炎 苏中根', 'remark':'0604003'},
+{'title':'实变函数与泛函分析概要', 'publisher':'高等教育出版社', 'category':'数学', 'author':'郑维行 王声望', 'remark':'0604004'},
+{'title':'数学分析原理', 'publisher':'机械工业出版社', 'category':'数学', 'author':'Walter Rudin', 'remark':'0604005'},
+{'title':'离散数学导论', 'publisher':'高等教育出版社', 'category':'数学', 'author':'徐洁磐', 'remark':'0604006'},
+{'title':'健康流言终结者', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'薄三郎', 'remark':'0604006'},
+{'title':'统计学原理', 'publisher':'南京大学出版社', 'category':'数学', 'author':'吴科杰', 'remark':'0604007'},
+{'title':'计量经济学', 'publisher':'高等教育出版社', 'category':'数学', 'author':'李子奈 潘文卿', 'remark':'0604008'},
+{'title':'抽样技术（第三版）', 'publisher':'中国人民大学出版社', 'category':'数学', 'author':'金勇进 杜子芳 蒋妍', 'remark':'0604009'},
+{'title':'离散数学及其应用', 'publisher':'机械工业出版社', 'category':'数学', 'author':'美国 Kenneth H.Rosen', 'remark':'0604010'},
+{'title':'数学建模及实验', 'publisher':'科学出版社', 'category':'数学', 'author':'严喜祖 宋中民 毕春加', 'remark':'0604011'},
+{'title':'高等数学竞赛教程2008', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'卢兴江 金蒙伟', 'remark':'0604012'},
+{'title':'高等数学竞赛教程2012', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'卢兴江 金蒙伟', 'remark':'0604013'},
+{'title':'数学分析习题集1~5 （共6本）', 'publisher':'山东科学技术出版社', 'category':'数学', 'author':'吉米多维奇', 'remark':'0604014'},
+{'title':'数学建模', 'publisher':'浙江大学出版社', 'category':'数学', 'author':'杨启帆 谈之奕', 'remark':'0604015'},
+{'title':'高等数学习题课28讲', 'publisher':'9787308043731', 'category':'数学', 'author':'暂无数据', 'remark':'0704002'},
+{'title':'微积分(下)(第二版)', 'publisher':'9787040216578', 'category':'数学', 'author':'', 'remark':'0704008'},
+{'title':'数学分析(下册)(第3版)', 'publisher':'9787040094435', 'category':'数学', 'author':'华东师范大学数学系编', 'remark':'0704013'},
+{'title':'数学分析 上册', 'publisher':'9787040091373', 'category':'数学', 'author':'华东师范大学数学系编', 'remark':'0704014'},
+{'title':'硕士研究生入学考试数学试题精解（2009年第7次印刷）', 'publisher':'9787810930390', 'category':'数学', 'author':'李娜', 'remark':'0904033'},
+{'title':'概率论.数理统计与随机过程', 'publisher':'9787308088527', 'category':'数学', 'author':'GILBERT STRANG', 'remark':'0904039'},
+{'title':'高等代数（上册）', 'publisher':'', 'category':'数学', 'author':'赵智大', 'remark':'0904043'},
+{'title':'工程数学学报', 'publisher':'', 'category':'数学', 'author':'2005年第7期', 'remark':'0904047'},
+{'title':'工程数学学报', 'publisher':'', 'category':'数学', 'author':'2008年增刊', 'remark':'0904048'},
+{'title':'工程数学学报', 'publisher':'', 'category':'数学', 'author':'', 'remark':'0904049'},
+{'title':'毛泽东思想和中国特色社会主义理论体系概论', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'吴树青', 'remark':'0105019'},
+{'title':'马克思主义基本原理概论', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'', 'remark':'0105099'},
+{'title':'思想道德修养与法律基础', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'', 'remark':'0105149'},
+{'title':'毛泽东思想和中国特色社会主义理论体系概论', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'吴树青', 'remark':'0105173'},
+{'title':'浙江精神与发展', 'publisher':'浙江大学出版社', 'category':'思政类', 'author':'段治文', 'remark':'0105177'},
+{'title':'中国近代史纲要', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'课题组', 'remark':'0205001'},
+{'title':'思想道德修养与法律基础', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'课题组', 'remark':'0205002'},
+{'title':'马克思主义基本原理概论', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'编写组', 'remark':'0205051'},
+{'title':'马克思主义基本原理概论', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'编写组', 'remark':'0205081'},
+{'title':'马克思主义基本原理概论', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'', 'remark':'0205154'},
+{'title':'马克思主义基本原理概论', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'', 'remark':'0205155'},
+{'title':'马克思主义基本原理概论', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'', 'remark':'0205157'},
+{'title':'马克思主义基本原理概论', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'', 'remark':'0205158'},
+{'title':'军事学概论', 'publisher':'浙江大学出版社', 'category':'思政类', 'author':'褚良才', 'remark':'0405021'},
+{'title':'马克思主义基本原理概论', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'', 'remark':'0405022'},
+{'title':'思想道德修养与法律基础', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'', 'remark':'0405024'},
+{'title':'公共经济学理论与应用', 'publisher':'9787040214949', 'category':'思政类', 'author':'朱柏铭', 'remark':'0405116'},
+{'title':'毛泽东思想、邓小平理论和三个代表重要思想概论(2008年修订版)(加学习卡)', 'publisher':'9787040240986', 'category':'思政类', 'author':'', 'remark':'0405117'},
+{'title':'中国近现代史纲要（2010年修订版） 马克思主义理论研究和建设工程', 'publisher':'9787040300642', 'category':'思政类', 'author':'', 'remark':'0405118'},
+{'title':'见证浙江 主流媒体笔下的浙江改革开放(2008/12)', 'publisher':'9787308064637', 'category':'思政类', 'author':'鲍洪俊等', 'remark':'0405119'},
+{'title':'马克思主义基本原理概论', 'publisher':'9787040299830', 'category':'思政类', 'author':'', 'remark':'0405120'},
+{'title':'马克思主义基本原理概论(2013年修订版)', 'publisher':'9787040377453', 'category':'思政类', 'author':'', 'remark':'0405121'},
+{'title':'毛泽东思想和中国特色社会主义理论体系概论', 'publisher':'9787040299847', 'category':'思政类', 'author':'', 'remark':'0405122'},
+{'title':'毛泽东思想和中国特色社会主义理论体系概论', 'publisher':'9787040299847', 'category':'思政类', 'author':'', 'remark':'0405123'},
+{'title':'毛泽东思想和中国特色社会主义理论体系概论', 'publisher':'高等教育出版社', 'category':'思政类', 'author':'本书编写组', 'remark':'0605001'},
+{'title':'马原复习资料', 'publisher':'', 'category':'思政类', 'author':'', 'remark':'0605002'},
+{'title':'毛概复习资料', 'publisher':'', 'category':'思政类', 'author':'', 'remark':'0605003'},
+{'title':'马原课本', 'publisher':'', 'category':'思政类', 'author':'', 'remark':'0605004'},
+{'title':'马克思主义基本原理概论', 'publisher':'9787040299830', 'category':'思政类', 'author':'', 'remark':'0905009'},
+{'title':'十天突破新托福ESSAYS', 'publisher':'机械工业出版社', 'category':'英语', 'author':'慎小嶷', 'remark':'0106011'},
+{'title':'新托福考试专项进阶——高级写作', 'publisher':'群言出版社', 'category':'英语', 'author':'Michael A.Putlack.', 'remark':'0106012'},
+{'title':'大学英语六级词汇', 'publisher':'机械工业出版社', 'category':'英语', 'author':'张开琪', 'remark':'0106014'},
+{'title':'新GRE阅读教程', 'publisher':'研究生院入学指导', 'category':'英语', 'author':'', 'remark':'0106021'},
+{'title':'新GRE写作', 'publisher':'外语教学与研究出版社', 'category':'英语', 'author':'李建林', 'remark':'0106022'},
+{'title':'GRE词汇逆序记忆小词典', 'publisher':'群言出版社', 'category':'英语', 'author':'俞敏洪', 'remark':'0106085'},
+{'title':'新GRE核心词汇', 'publisher':'群言出版社', 'category':'英语', 'author':'俞敏洪', 'remark':'0106088'},
+{'title':'GRE句子填空', 'publisher':'西安交通大学出版社', 'category':'英语', 'author':'陈圣元', 'remark':'0106089'},
+{'title':'6级词汇', 'publisher':'西安交通大学出版社', 'category':'英语', 'author':'新东方考试研究中心', 'remark':'0106090'},
+{'title':'翻译学入门', 'publisher':'浙江大学出版社', 'category':'英语', 'author':'陈刚', 'remark':'0106125'},
+{'title':'GRE类比/反义词', 'publisher':'西安交通大学出版社', 'category':'英语', 'author':'宋昊', 'remark':'0106130'},
+{'title':'GRE官方题库范文精讲', 'publisher':'西安交通大学出版社', 'category':'英语', 'author':'Mark Alan Stewart,J.D.', 'remark':'0106131'},
+{'title':'GRE笔试模考练习', 'publisher':'中国环境科学出版社', 'category':'英语', 'author':'', 'remark':'0106132'},
+{'title':'GRE GENERAL TEST', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0106133'},
+{'title':'GRE GENERAL TEST', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0106138'},
+{'title':'GRE GENERAL TEST', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0106143'},
+{'title':'GRE句子填空', 'publisher':'西安交通大学出版社', 'category':'英语', 'author':'陈圣元', 'remark':'0106144'},
+{'title':'GRE类比反义讲义', 'publisher':'', 'category':'英语', 'author':'孟家峰', 'remark':'0106145'},
+{'title':'GRE全套', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0106178'},
+{'title':'新GRE核心词汇考法精析', 'publisher':'群言出版社', 'category':'英语', 'author':'陈琦、周书林', 'remark':'0206003'},
+{'title':'最新GRE笔试模拟练习', 'publisher':'中国环境科学出版社', 'category':'英语', 'author':'编写组', 'remark':'0206005'},
+{'title':'新概念英语3', 'publisher':'外语教学与研究出版社', 'category':'英语', 'author':'亚历山大', 'remark':'0206006'},
+{'title':'新大学俄语简明教程', 'publisher':'高等教育出版社', 'category':'英语', 'author':'蒋财珍', 'remark':'0206011'},
+{'title':'北美GRE强化数学讲义', 'publisher':'', 'category':'英语', 'author':'孙瑜', 'remark':'0206012'},
+{'title':'英语单词表', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0206021'},
+{'title':'柯林斯COBULID英语习语练习册', 'publisher':'上海外语教育出版社', 'category':'英语', 'author':'Malcolm Goodale', 'remark':'0206029'},
+{'title':'新GRE写作教程', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0206033'},
+{'title':'新GRE写作思路剖析与题库精讲', 'publisher':'群言出版社', 'category':'英语', 'author':'张雷东', 'remark':'0206035'},
+{'title':'新托福口语', 'publisher':'', 'category':'英语', 'author':'常远', 'remark':'0206038'},
+{'title':'GMAT词汇精选', 'publisher':'群言出版社', 'category':'英语', 'author':'俞敏洪', 'remark':'0206061'},
+{'title':'大学英语六级词汇高分手册', 'publisher':'浙江大学出版社', 'category':'英语', 'author':'施晓伟', 'remark':'0206078'},
+{'title':'走进美国文化', 'publisher':'外语教学与研究出版社', 'category':'英语', 'author':'', 'remark':'0206096'},
+{'title':'GRE数学教程', 'publisher':'', 'category':'英语', 'author':'本书编写组', 'remark':'0206129'},
+{'title':'GRE填空教程', 'publisher':'', 'category':'英语', 'author':'本书编写组', 'remark':'0206130'},
+{'title':'GRE阅读理解教程', 'publisher':'', 'category':'英语', 'author':'本书编写组', 'remark':'0206131'},
+{'title':'GRE写作教程', 'publisher':'', 'category':'英语', 'author':'本书编写组', 'remark':'0206132'},
+{'title':'GRE核心词汇考法精析', 'publisher':'群言出版社', 'category':'英语', 'author':'陈琦', 'remark':'0206133'},
+{'title':'GRE写作', 'publisher':'西安交通大学出版社', 'category':'英语', 'author':'孙远', 'remark':'0206134'},
+{'title':'英语语音教程', 'publisher':'高等教育出版社', 'category':'英语', 'author':'王桂珍', 'remark':'0206135'},
+{'title':'GRE作文大讲堂', 'publisher':'群言出版社', 'category':'英语', 'author':'韦晓亮', 'remark':'0206136'},
+{'title':'大学英语6级考试标准阅读', 'publisher':'北京教育出版社', 'category':'英语', 'author':'王长喜', 'remark':'0206145'},
+{'title':'新东方四级词汇（小）', 'publisher':'西安交通大学出版社', 'category':'英语', 'author':'俞敏洪', 'remark':'0406002'},
+{'title':'新东方四级词汇(大）', 'publisher':'西安交通大学出版社', 'category':'英语', 'author':'俞敏洪', 'remark':'0406003'},
+{'title':'TOEFL词汇21天突破', 'publisher':'世界图书出版公司', 'category':'英语', 'author':'李笑来', 'remark':'0406005'},
+{'title':'TOEFL iBT词汇', 'publisher':'群言出版社', 'category':'英语', 'author':'张红岩', 'remark':'0406006'},
+{'title':'TOEFL iBT词汇', 'publisher':'群言出版社', 'category':'英语', 'author':'张红岩', 'remark':'0406007'},
+{'title':'GRE 词汇精选', 'publisher':'群言出版社', 'category':'英语', 'author':'俞敏洪', 'remark':'0406008'},
+{'title':'全新大学英语词汇必备', 'publisher':'吉林出版集团有限公司', 'category':'英语', 'author':'马德高', 'remark':'0406011'},
+{'title':'GRE考试官方指南', 'publisher':'群言出版社', 'category':'英语', 'author':'', 'remark':'0406012'},
+{'title':'GRE官方题库范文精讲', 'publisher':'西安交通大学出版社', 'category':'英语', 'author':'Mark Alen', 'remark':'0406014'},
+{'title':'新编大学英语(5)学生用书(11版)配光盘', 'publisher':'9787560054834', 'category':'英语', 'author':'应惠兰', 'remark':'0406124'},
+{'title':'新编跨文化交际英语教程(修订版)(新世纪高等院校英语专业本', 'publisher':'9787544612593', 'category':'英语', 'author':'许力生', 'remark':'0406125'},
+{'title':'GRE&GMAT阅读难句教程――新东方大愚英语学习丛书', 'publisher':'9787800809927', 'category':'英语', 'author':'杨鹏编', 'remark':'0406126'},
+{'title':'美英报刊阅读教程(中级精选本第2版普通高等教育十一五国家级规划教材)', 'publisher':'9787301163788', 'category':'英语', 'author':'端木义万主编；丁山等编 编', 'remark':'0406127'},
+{'title':'全新大学英语1～4级词汇重难点全突破', 'publisher':'9787510010323', 'category':'英语', 'author':'黎小说主编 编', 'remark':'0406128'},
+{'title':'新编跨文化交际英语教程(修订版)(新世纪高等院校英语专业本(BZ)', 'publisher':'9787544612593', 'category':'英语', 'author':'许力生', 'remark':'0406129'},
+{'title':'新概念英语3', 'publisher':'9787560013480', 'category':'英语', 'author':'', 'remark':'0406130'},
+{'title':'新题型大学英语四级考试巅峰训练（书+MP3光盘）', 'publisher':'9787894810274', 'category':'英语', 'author':'姜健主编', 'remark':'0406131'},
+{'title':'新GRE填空教程', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0506010'},
+{'title':'大学英语6级听力模拟真题', 'publisher':'华东理工大学出版社', 'category':'英语', 'author':'张绍华', 'remark':'0506025'},
+{'title':'GRE&GMAT阅读难句教程', 'publisher':'西安交通大学出版社', 'category':'英语', 'author':'杨鹏', 'remark':'0506029'},
+{'title':'托福强化写作讲义', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0506030'},
+{'title':'新托福考试写作特训', 'publisher':'世界图书出版公司', 'category':'英语', 'author':'JI-YEON LEE', 'remark':'0506031'},
+{'title':'GRE 数学教程', 'publisher':'中国环境科学出版社', 'category':'英语', 'author':'', 'remark':'0606001'},
+{'title':'新GRE核心词汇', 'publisher':'高等教育出版社', 'category':'英语', 'author':'胡敏', 'remark':'0606002'},
+{'title':'新东方四级词汇', 'publisher':'浙江教育出版社', 'category':'英语', 'author':'俞敏洪', 'remark':'0606003'},
+{'title':'托福强化口语讲义', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0606004'},
+{'title':'新托福考试官方指南', 'publisher':'北京语言大学出版社', 'category':'英语', 'author':'', 'remark':'0606005'},
+{'title':'新GRE核心词汇考法精析', 'publisher':'群言出版社', 'category':'英语', 'author':'陈琦 周书林', 'remark':'0606006'},
+{'title':'猴哥GRE类比反义速记', 'publisher':'气象出版社', 'category':'英语', 'author':'猴哥', 'remark':'0606007'},
+{'title':'六级词汇 词根+联想', 'publisher':'新东方', 'category':'英语', 'author':'俞敏洪', 'remark':'0606008'},
+{'title':'剑桥国际商务英语', 'publisher':'华夏出版社', 'category':'英语', 'author':'Leo Jones ，Richard Alexander', 'remark':'0606009'},
+{'title':'大学英语六级710分真题精典', 'publisher':'中国水利水电出版社', 'category':'英语', 'author':'方振宇', 'remark':'0606010'},
+{'title':'GRE写作教程', 'publisher':'北京', 'category':'英语', 'author':'本书编写组', 'remark':'0606011'},
+{'title':'六级词汇 词根+联想', 'publisher':'西安交通大学出版社', 'category':'英语', 'author':'俞敏洪', 'remark':'0606012'},
+{'title':'GRE写作', 'publisher':'9787560521534', 'category':'英语', 'author':'暂无数据', 'remark':'0706004'},
+{'title':'英语词缀词典－－新东方大愚英语学习丛书', 'publisher':'9787800809682', 'category':'英语', 'author':'（韩）金正基编，李先汉，南燕译', 'remark':'0706007'},
+{'title':'淘金高阶六级考试巅峰阅读160篇(附MP3)', 'publisher':'9787506287845', 'category':'英语', 'author':'', 'remark':'0706009'},
+{'title':'TOEFL词汇词根+联想记忆法(附盘)', 'publisher':'9787506270267', 'category':'英语', 'author':'俞敏洪', 'remark':'0706024'},
+{'title':'GRE数学教程', 'publisher':'9787801633378', 'category':'英语', 'author':'本书编写组编', 'remark':'0706025'},
+{'title':'新gre数学教程', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0706031'},
+{'title':'托福考试官方指南：', 'publisher':'9787802563315', 'category':'英语', 'author':'美国教育考试服务中心 著, 张洪伟, 董惠羽 译', 'remark':'0906002'},
+{'title':'语文-官方指南', 'publisher':'9780470684511', 'category':'英语', 'author':'本社', 'remark':'0906003'},
+{'title':'六级词汇词根+联想记忆法(便携版)――新东方大愚英语学习丛书', 'publisher':'9787800807619', 'category':'英语', 'author':'俞敏洪编', 'remark':'0906007'},
+{'title':'新要求大学英语四级词汇词根+联想+图解记忆法（分频版）（附MP3光盘）', 'publisher':'9787546305813', 'category':'英语', 'author':'马德高主编', 'remark':'0906008'},
+{'title':'新编跨文化交际英语教程(修订版)(新世纪高等院校英语专业本(BZ)', 'publisher':'9787544612593', 'category':'英语', 'author':'', 'remark':'0906018'},
+{'title':'GRE数学教程', 'publisher':'9787801633378', 'category':'英语', 'author':'王汀主编', 'remark':'0906031'},
+{'title':'IELTS考试技能训练教程-听力(最新修订)(附盘)', 'publisher':'9787561919408', 'category':'英语', 'author':'贾伯年，俞朴，宋爱国 主编', 'remark':'0906035'},
+{'title':'POWER SYSTEM MODELLING AND SCRIPTING', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0906041'},
+{'title':'GRE写作教程', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0906050'},
+{'title':'GRE填空教程', 'publisher':'', 'category':'英语', 'author':'侯宇轩', 'remark':'0906051'},
+{'title':'GRE句子填空', 'publisher':'', 'category':'英语', 'author':'陈虎平', 'remark':'0906052'},
+{'title':'GRE阅读制胜法则', 'publisher':'', 'category':'英语', 'author':'陈琦', 'remark':'0906053'},
+{'title':'GRE考前冲刺班讲义', 'publisher':'', 'category':'英语', 'author':'杨子江', 'remark':'0906054'},
+{'title':'北美GRE强化填空讲义', 'publisher':'', 'category':'英语', 'author':'刘之元', 'remark':'0906055'},
+{'title':'新GRE阅读讲义', 'publisher':'', 'category':'英语', 'author':'陈虎平', 'remark':'0906056'},
+{'title':'北美GRE强化阅读讲义', 'publisher':'', 'category':'英语', 'author':'赵丽', 'remark':'0906057'},
+{'title':'北美GRE强化填空讲义', 'publisher':'', 'category':'英语', 'author':'宁立波', 'remark':'0906058'},
+{'title':'北美GRE强化写作讲义', 'publisher':'', 'category':'英语', 'author':'陈虎平', 'remark':'0906059'},
+{'title':'北美GRE强化阅读讲义', 'publisher':'', 'category':'英语', 'author':'刘之元', 'remark':'0906060'},
+{'title':'北美GRE强化阅读讲义', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0906061'},
+{'title':'GRE国内全真题', 'publisher':'', 'category':'英语', 'author':'天道国际教育集团', 'remark':'0906062'},
+{'title':'直通美国', 'publisher':'', 'category':'英语', 'author':'', 'remark':'0906063'},
+{'title':'数据结构与算法分析', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'Mark Allen Weiss', 'remark':'0107002'},
+{'title':'模拟电子技术基础', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'童诗白', 'remark':'0107004'},
+{'title':'动量、热量和质量传递原理', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'J.R.威尔特', 'remark':'0107005'},
+{'title':'数据结构与算法分析', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'Mark Allen Weiss', 'remark':'0107007'},
+{'title':'面向对象程序设计基础', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'李师贤', 'remark':'0107008'},
+{'title':'自动控制原理', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'孙优贤', 'remark':'0107010'},
+{'title':'电路基础', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'Charles K.Alexander.', 'remark':'0107018'},
+{'title':'模拟电子技术基础习题解答', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'华成英', 'remark':'0107024'},
+{'title':'模拟电子技术基础', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'华成英', 'remark':'0107025'},
+{'title':'仿人机器人', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'（日）尾田秀司', 'remark':'0107026'},
+{'title':'电力经济与电力市场', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'甘德强', 'remark':'0107027'},
+{'title':'TMS320F281x  DSP原理及应用技术', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'韩丰田', 'remark':'0107028'},
+{'title':'电力技术经济原理', 'publisher':'中国电力出版社', 'category':'专业课', 'author':'肖先勇', 'remark':'0107029'},
+{'title':'工程电磁场数值计算', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'倪光正', 'remark':'0107030'},
+{'title':'集成电子技术基础教程（下册）', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'王小海', 'remark':'0107031'},
+{'title':'电机学、电机与拖动实验教程', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'章玮', 'remark':'0107033'},
+{'title':'电力电子技术与运动控制系统实验', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'潘再平', 'remark':'0107034'},
+{'title':'动量、热量和质量传递原理', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'J.R.威尔特', 'remark':'0107035'},
+{'title':'LabVIEW大学实用教程', 'publisher':'电子工业出版社', 'category':'专业课', 'author':'Jeffrey Travis', 'remark':'0107036'},
+{'title':'电子技术基础实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'王小海', 'remark':'0107037'},
+{'title':'非传统安全概论', 'publisher':'浙江人民出版社', 'category':'专业课', 'author':'潘一禾', 'remark':'0107041'},
+{'title':'电机学、电机与拖动实验教程', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'章玮', 'remark':'0107042'},
+{'title':'电机学、电机与拖动实验教程', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'章玮', 'remark':'0107043'},
+{'title':'电子技术基础实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'王小海', 'remark':'0107044'},
+{'title':'电路实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'姚缨英', 'remark':'0107045'},
+{'title':'电力信息技术', 'publisher':'', 'category':'专业课', 'author':'郭创新', 'remark':'0107046'},
+{'title':'TMS320F281x  数字信号处理器开发应用实验指导', 'publisher':'', 'category':'专业课', 'author':'卢惠芬', 'remark':'0107047'},
+{'title':'电力经济与电力市场', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'甘德强', 'remark':'0107049'},
+{'title':'控制电器及应用', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'李中年', 'remark':'0107050'},
+{'title':'信号分析与处理', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'赵光宙', 'remark':'0107052'},
+{'title':'计算机应用基础', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'赵明', 'remark':'0107056'},
+{'title':'计算机组成课程设计', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'王志英', 'remark':'0107057'},
+{'title':'计算机软件技术基础教程', 'publisher':'西安电子科技大学出版社', 'category':'专业课', 'author':'刘彦明', 'remark':'0107059'},
+{'title':'概率论、数理统计与随机过程', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'张帼奋', 'remark':'0107063'},
+{'title':'计算机组成与设计——软件硬件借口', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'David A.Patterson', 'remark':'0107065'},
+{'title':'动量、热量和质量传递原理', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'J.R.威尔特', 'remark':'0107066'},
+{'title':'概率论、数理统计与随机过程', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'张帼奋', 'remark':'0107068'},
+{'title':'电路实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'姚缨英', 'remark':'0107069'},
+{'title':'多媒体技术教程', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'Ze-Nian Li ', 'remark':'0107071'},
+{'title':'深入理解计算机系统', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'Randal E.Bryant', 'remark':'0107072'},
+{'title':'Intel微处理器', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'Barry B.Brey', 'remark':'0107073'},
+{'title':'计算机网络实验指导书', 'publisher':'电子工业出版社', 'category':'专业课', 'author':'郭雅', 'remark':'0107075'},
+{'title':'计算机软件技术基础教程', 'publisher':'西安电子科技大学出版社', 'category':'专业课', 'author':'刘彦明', 'remark':'0107077'},
+{'title':'电子技术基础实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'王小海', 'remark':'0107078'},
+{'title':'MATLAB实用教程（第二版）', 'publisher':'电子工业出版社', 'category':'专业课', 'author':'Holly Moore', 'remark':'0107080'},
+{'title':'概率论与数理统计习题精选精解', 'publisher':'山东科学技术出版社', 'category':'专业课', 'author':'张天德', 'remark':'0107081'},
+{'title':'材料力学一（第五版）同步辅导及习题全解', 'publisher':'中国水利水电出版社', 'category':'专业课', 'author':'潘丽娜', 'remark':'0107086'},
+{'title':'材料力学二（第五版）同步辅导及习题全解', 'publisher':'中国水利水电出版社', 'category':'专业课', 'author':'潘丽娜', 'remark':'0107087'},
+{'title':'理论力学一（第七版）同步辅导及习题全解', 'publisher':'中国水利水电出版社', 'category':'专业课', 'author':'刘东星', 'remark':'0107091'},
+{'title':'数据结构与算法分析（英文版）', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'Mark Allen Weiss', 'remark':'0107092'},
+{'title':'数据结构与算法分析', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'Mark Allen Weiss', 'remark':'0107093'},
+{'title':'全国计算机等级考试上机考试题库二级C', 'publisher':'电子科技大学出版社', 'category':'专业课', 'author':'', 'remark':'0107095'},
+{'title':'动量、热量和质量传递原理', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'J.R.威尔特', 'remark':'0107096'},
+{'title':'力学（物理类）', 'publisher':'北京大学出版社', 'category':'专业课', 'author':'舒幼生', 'remark':'0107098'},
+{'title':'流体力学', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'张也影', 'remark':'0107100'},
+{'title':'电子技术基础实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'王小海', 'remark':'0107101'},
+{'title':'电路实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'姚缨英', 'remark':'0107102'},
+{'title':'数学电子技术基础（第五版）习题解答', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'王红', 'remark':'0107103'},
+{'title':'工程制图同步autocad中文版实用教程', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'周勇光', 'remark':'0107104'},
+{'title':'数值分析基础', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'叶兴德', 'remark':'0107113'},
+{'title':'材料力学实验', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'刘鸿文', 'remark':'0107114'},
+{'title':'材料力学二（第五版）', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'刘鸿文', 'remark':'0107115'},
+{'title':'材料力学一（第五版）', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'刘鸿文', 'remark':'0107116'},
+{'title':'电子技术基础模拟部分', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'康华光', 'remark':'0107120'},
+{'title':'电子技术基础实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'王小海', 'remark':'0107121'},
+{'title':'数字集成电路——电路、系统与设计', 'publisher':'电子工业出版社', 'category':'专业课', 'author':'Jan M.Rabaey', 'remark':'0107122'},
+{'title':'数字电子技术基础同步辅导及习题全解', 'publisher':'中国矿业大学出版社', 'category':'专业课', 'author':'唐亚楠', 'remark':'0107124'},
+{'title':'现代电视基础与检测实验指导书', 'publisher':'浙大信电学系', 'category':'专业课', 'author':'陈鹏飞', 'remark':'0107126'},
+{'title':'现代电视基础与检测', 'publisher':'浙大信电学系', 'category':'专业课', 'author':'陈鹏飞', 'remark':'0107127'},
+{'title':'数学分析习题全解', 'publisher':'安徽人民出版社', 'category':'专业课', 'author':'廖良文', 'remark':'0107128'},
+{'title':'电子测量技术', 'publisher':'电子工业出版社', 'category':'专业课', 'author':'林占江', 'remark':'0107129'},
+{'title':'单片微型计算机原理与接口技术习题、实验与试题解析', 'publisher':'科学出版社', 'category':'专业课', 'author':'高锋', 'remark':'0107134'},
+{'title':'电子技术基础实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'王小海', 'remark':'0107136'},
+{'title':'电机学、电机与拖动实验教程', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'章玮', 'remark':'0107137'},
+{'title':'Android基础开发与实践', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'吴善财', 'remark':'0107139'},
+{'title':'电路分析', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'孙盾', 'remark':'0107140'},
+{'title':'电路分析', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'孙盾', 'remark':'0107141'},
+{'title':'电机学、电机与拖动实验教程', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'章玮', 'remark':'0107142'},
+{'title':'电机学习题解析', 'publisher':'西安交通大学出版社', 'category':'专业课', 'author':'阎治安', 'remark':'0107147'},
+{'title':'摄像技术与DV制作', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'程勇', 'remark':'0107151'},
+{'title':'电工电子工程训练', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'潘丽萍', 'remark':'0107157'},
+{'title':'无人机系统导论', 'publisher':'电子工业出版社', 'category':'专业课', 'author':'Paul G.Fahlstrom', 'remark':'0107158'},
+{'title':'数据结构与算法分析  c语言描述（英文版）', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'Mark Allen Weiss', 'remark':'0107170'},
+{'title':'数字系统设计与Verilog  HDL', 'publisher':'电子工业出版社', 'category':'专业课', 'author':'王金明', 'remark':'0107174'},
+{'title':'动量、热量和质量传递原理', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'J.R.威尔特', 'remark':'0107175'},
+{'title':'电路原理', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'范承志', 'remark':'0207004'},
+{'title':'电路实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'姚缨英', 'remark':'0207007'},
+{'title':'电路原理学习指导与习题解析', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'李玉玲', 'remark':'0207008'},
+{'title':'控制理论CAI教程', 'publisher':'科学出版社', 'category':'专业课', 'author':'颜文俊', 'remark':'0207009'},
+{'title':'Linux程序设计', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'严冰', 'remark':'0207010'},
+{'title':'控制系统的数字仿真及计算机辅助设计', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'钱积新', 'remark':'0207013'},
+{'title':'软件工程', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'王慧芳', 'remark':'0207014'},
+{'title':'电气工程基础', 'publisher':'西安交通大学出版社', 'category':'专业课', 'author':'王锡凡', 'remark':'0207015'},
+{'title':'集成电子技术基础教程 下册', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'王小海', 'remark':'0207016'},
+{'title':'电磁场实验指导书', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'', 'remark':'0207018'},
+{'title':'工磁（讲义）', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'', 'remark':'0207019'},
+{'title':'电机建模与分析讲义', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'', 'remark':'0207020'},
+{'title':'计算机组成课程设计', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'', 'remark':'0207022'},
+{'title':'逻辑与计算机设计基础实验与课程设计', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'', 'remark':'0207023'},
+{'title':'MAXWELL EQUATIONS', 'publisher':'EMS Publishing', 'category':'专业课', 'author':'JIN AU KONG', 'remark':'0207024'},
+{'title':'电路实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'姚缨英', 'remark':'0207024'},
+{'title':'控制电器及应用', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'李中年', 'remark':'0207025'},
+{'title':'模拟电子技术基础 习题解答', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'华成英', 'remark':'0207028'},
+{'title':'UG NX6.0 立体词典：产品建模', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'单岩', 'remark':'0207032'},
+{'title':'特高压交直流电网', 'publisher':'中国电力出版社', 'category':'专业课', 'author':'刘振亚', 'remark':'0207034'},
+{'title':'食品营养学', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'李铎', 'remark':'0207036'},
+{'title':'电力系统分析', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'韩祯祥', 'remark':'0207037'},
+{'title':'Intel系列微处理器体系结构、编程与接口', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'巴里 B. 布雷', 'remark':'0207040'},
+{'title':'电子设计与实践指南', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'阮秉涛', 'remark':'0207041'},
+{'title':'数字图像处理', 'publisher':'电子工业出版社', 'category':'专业课', 'author':'Rarael C. Gonzalez', 'remark':'0207042'},
+{'title':'电工电子学学习辅导与习题解答', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'张伯尧', 'remark':'0207049'},
+{'title':'电路实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'姚缨英', 'remark':'0207052'},
+{'title':'信号分析与处理', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'赵光宙', 'remark':'0207053'},
+{'title':'信号分析与处理——虚拟仪器实验教程', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'孙晖', 'remark':'0207054'},
+{'title':'单片微型计算机原理与接口技术习题、实验与试题解析', 'publisher':'科学出版社', 'category':'专业课', 'author':'高锋', 'remark':'0207055'},
+{'title':'微处理机原理与接口技术', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'王汀', 'remark':'0207057'},
+{'title':'公共经济学理论与应用', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'朱柏铭', 'remark':'0207062'},
+{'title':'电路原理学习指导与习题解析', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'李玉玲', 'remark':'0207064'},
+{'title':'数字电子技术基础', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'阎石', 'remark':'0207069'},
+{'title':'模拟电子技术基础', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'童诗白', 'remark':'0207070'},
+{'title':'单片机初级教程——单片机基础', 'publisher':'北京航空航天大学出版社', 'category':'专业课', 'author':'张迎新', 'remark':'0207071'},
+{'title':'自动检测技术与装置', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'张宏建', 'remark':'0207072'},
+{'title':'电工电子学', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'叶挺秀', 'remark':'0207073'},
+{'title':'管理信息系统习题集', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'黄梯云', 'remark':'0207094'},
+{'title':'生物医学测量与仪器', 'publisher':'复旦大学出版社', 'category':'专业课', 'author':'王保华', 'remark':'0207095'},
+{'title':'电工电子工程训练', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'潘丽萍', 'remark':'0207100'},
+{'title':'材料力学实验', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'刘鸿文', 'remark':'0207101'},
+{'title':' ', 'publisher':'华中科技大学出版社', 'category':'专业课', 'author':'徐志农', 'remark':'0207102'},
+{'title':'电路实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'姚缨英', 'remark':'0207107'},
+{'title':'电子技术基础实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'', 'remark':'0207108'},
+{'title':'电路实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'姚缨英', 'remark':'0207109'},
+{'title':'电路实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'姚缨英', 'remark':'0207137'},
+{'title':'数据结构与算法分析', 'publisher':'人民邮电出版社', 'category':'专业课', 'author':'Mark Allen Weiss', 'remark':'0207138'},
+{'title':'数据结构与算法分析——C语言描述', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'Mark Allen Weiss', 'remark':'0207141'},
+{'title':'建筑制图', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'施林祥', 'remark':'0207144'},
+{'title':'数据结构与算法分析  C语言描述', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'', 'remark':'0207149'},
+{'title':'材料力学（I）', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'孙训芳', 'remark':'0407010'},
+{'title':'数据结构与算法分析（英文版）', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'MARK ALLEN', 'remark':'0407013'},
+{'title':'系统工程（第四版）', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'汪应洛', 'remark':'0407015'},
+{'title':'电力电子技术实验教程', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'汤建新', 'remark':'0407016'},
+{'title':'现代控制系统（英文第十版）', 'publisher':'科学出版社', 'category':'专业课', 'author':'R.C.多尔夫', 'remark':'0407017'},
+{'title':'信号分析与处理', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'张晖', 'remark':'0407019'},
+{'title':'电子技术基础实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'阮邴涛', 'remark':'0407023'},
+{'title':'模电课件打印版', 'publisher':'无', 'category':'专业课', 'author':'无', 'remark':'0407025'},
+{'title':'tmx数字信号处理器实验指导', 'publisher':'无', 'category':'专业课', 'author':'卢惠芬', 'remark':'0407026'},
+{'title':'电器学（影印版）', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'夏天伟', 'remark':'0407027'},
+{'title':'信号课件打印版', 'publisher':'无', 'category':'专业课', 'author':'无', 'remark':'0407028'},
+{'title':'电路分析基础全真试题', 'publisher':'西安电子科技大学出版社', 'category':'专业课', 'author':'张永瑞', 'remark':'0407031'},
+{'title':'UG NX 6.0立体词典', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'单岩', 'remark':'0407032'},
+{'title':'信息论与编码', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'仇佩亮', 'remark':'0407042'},
+{'title':'PSPICE电子仿真及应用', 'publisher':'9787030259745', 'category':'专业课', 'author':'', 'remark':'0407132'},
+{'title':'材料力学实验(高等学校教材)', 'publisher':'9787040177671', 'category':'专业课', 'author':'刘鸿文//吕荣坤', 'remark':'0407133'},
+{'title':'电工电子工程训练', 'publisher':'9787308074834', 'category':'专业课', 'author':'潘丽萍主编 编', 'remark':'0407134'},
+{'title':'电工电子学（第3版）学习辅导与习题解答', 'publisher':'9787040249262', 'category':'专业课', 'author':'', 'remark':'0407135'},
+{'title':'电路原理-第3版', 'publisher':'9787111286325', 'category':'专业课', 'author':'范承志等编著', 'remark':'0407136'},
+{'title':'电子技术基础实验教程(电工电子实验系列教材)', 'publisher':'9787040170627', 'category':'专业课', 'author':'王小海蔡忠法', 'remark':'0407137'},
+{'title':'化工原理', 'publisher':'9787030191502', 'category':'专业课', 'author':'', 'remark':'0407138'},
+{'title':'建筑制图习题集(第二版)', 'publisher':'9787308021425', 'category':'专业课', 'author':'陈丹玲等', 'remark':'0407139'},
+{'title':'理论力学.Ⅰ', 'publisher':'9787040110708', 'category':'专业课', 'author':'哈尔滨工业大学理论力学教研室编', 'remark':'0407140'},
+{'title':'普通高等教育机电类规划教材：信号分析与处理', 'publisher':'9787111084921', 'category':'专业课', 'author':'', 'remark':'0407141'},
+{'title':'遗传学', 'publisher':'9787308053853', 'category':'专业课', 'author':'石春海', 'remark':'0407142'},
+{'title':'LabVIEW大学实用教程-(第三版)(含光盘1张)', 'publisher':'9787121066672', 'category':'专业课', 'author':'Jeffrey Travis', 'remark':'0407143'},
+{'title':'Verilog数字系统设计教程(第二版)', 'publisher':'9787811243093', 'category':'专业课', 'author':'', 'remark':'0407144'},
+{'title':'材料力学实验(高等学校教材)', 'publisher':'9787040177671', 'category':'专业课', 'author':'刘鸿文//吕荣坤', 'remark':'0407145'},
+{'title':'电工电子工程训练', 'publisher':'9787308074834', 'category':'专业课', 'author':'潘丽萍主编 编', 'remark':'0407146'},
+{'title':'电力经济与电力市场', 'publisher':'9787111297536', 'category':'专业课', 'author':'', 'remark':'0407147'},
+{'title':'电路分析', 'publisher':'9787111263852', 'category':'专业课', 'author':'孙盾，范承志，童梅　编', 'remark':'0407148'},
+{'title':'电子技术基础实验教程(电工电子实验系列教材)', 'publisher':'9787040170627', 'category':'专业课', 'author':'王小海蔡忠法', 'remark':'0407149'},
+{'title':'电子技术基础实验教程(电工电子实验系列教材)', 'publisher':'9787040170627', 'category':'专业课', 'author':'王小海蔡忠法', 'remark':'0407150'},
+{'title':'电子技术基础实验教程(电工电子实验系列教材)', 'publisher':'9787040170627', 'category':'专业课', 'author':'王小海蔡忠法', 'remark':'0407151'},
+{'title':'高等学校规划教材:工程地质学', 'publisher':'9787112088973', 'category':'专业课', 'author':'张忠苗', 'remark':'0407152'},
+{'title':'高分子专业实验教程', 'publisher':'9787308081252', 'category':'专业课', 'author':'', 'remark':'0407153'},
+{'title':'工程材料及热加工(附光盘普通高等教育十一五国家级规划教材)', 'publisher':'9787040207538', 'category':'专业课', 'author':'陈培里', 'remark':'0407154'},
+{'title':'工程电磁场原理（第2版）', 'publisher':'9787040274547', 'category':'专业课', 'author':'', 'remark':'0407155'},
+{'title':'工程制图学习指导和考试指导', 'publisher':'9787308036214', 'category':'专业课', 'author':'', 'remark':'0407156'},
+{'title':'集成电子技术基础教程(上普通高等教育十一五国家级规划教材)', 'publisher':'9787040239508', 'category':'专业课', 'author':'郑家龙陈隆道蔡忠法', 'remark':'0407157'},
+{'title':'建筑工程材料', 'publisher':'9787308065245', 'category':'专业课', 'author':'钱晓倩主编', 'remark':'0407158'},
+{'title':'建筑工程材料实验', 'publisher':'9787308065252', 'category':'专业课', 'author':'', 'remark':'0407159'},
+{'title':'普通高等教育“十一五”国家级规划教材：电工电子学实验教程', 'publisher':'9787308068642', 'category':'专业课', 'author':'', 'remark':'0407160'},
+{'title':'土木工程概论【第3版】', 'publisher':'9787040249248', 'category':'专业课', 'author':'叶志明主编', 'remark':'0407161'},
+{'title':'信号与系统例题分析', 'publisher':'9787302184379', 'category':'专业课', 'author':'', 'remark':'0407162'},
+{'title':'信号与系统实验教程', 'publisher':'9787115130679', 'category':'专业课', 'author':'', 'remark':'0407163'},
+{'title':'信号与系统实验教程', 'publisher':'9787115130679', 'category':'专业课', 'author':'', 'remark':'0407164'},
+{'title':'应用材料基础/新世纪高等院校精品教材', 'publisher':'9787308038034', 'category':'专业课', 'author':'吴进明编', 'remark':'0407165'},
+{'title':'电路实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'', 'remark':'0407166'},
+{'title':'电子线路综合实验', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'屈民军', 'remark':'0407167'},
+{'title':'电力电子技术实验教程', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'汤建新', 'remark':'0407168'},
+{'title':'标准日本语（上、下）', 'publisher':'人民教育出版社', 'category':'专业课', 'author':'叶立群', 'remark':'0407069'},
+{'title':'电子设计从零开始', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'杨欣等', 'remark':'0407070'},
+{'title':'网页制作案例教程', 'publisher':'航空工业出版社', 'category':'专业课', 'author':'李跃贞', 'remark':'0407071'},
+{'title':'智能控制理论及应用', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'王耀南', 'remark':'0507004'},
+{'title':'电力电子技术与运动控制系统实验', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'潘再平、唐益民', 'remark':'0507005'},
+{'title':'MysQL入门很简单', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'黄缙华', 'remark':'0507006'},
+{'title':'集成电子技术基础教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'郑家龙', 'remark':'0507007'},
+{'title':'过程控制工程实验', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'冯毅萍', 'remark':'0507008'},
+{'title':'电器学', 'publisher':'', 'category':'专业课', 'author':'', 'remark':'0507009'},
+{'title':'信号与系统', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'于慧敏', 'remark':'0507011'},
+{'title':'化工流程模拟实训——Aspen Plus教程', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'孙兰义', 'remark':'0507012'},
+{'title':'模拟电子技术基础——习题解答', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'华成英', 'remark':'0507013'},
+{'title':'集成电子技术基础教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'郑家龙', 'remark':'0507014'},
+{'title':'LINUX内核指导', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'李善平', 'remark':'0507016'},
+{'title':'信号与系统（上下）', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'郑君里', 'remark':'0507018'},
+{'title':'数据库课程设计', 'publisher':'浙江大学出版社', 'category':'专业课', 'author':'陈根才', 'remark':'0507020'},
+{'title':'MAXWELL　EQUATIONS（Part 1&&2）', 'publisher':'', 'category':'专业课', 'author':'JIN AU KONG', 'remark':'0507024'},
+{'title':'电机设计', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'陈世坤', 'remark':'0507028'},
+{'title':'模拟电子基础', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'童诗白', 'remark':'0507032'},
+{'title':'数据结构与算法分析', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'Mark Allen Weiss', 'remark':'0507033'},
+{'title':'过程控制工程实验', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'', 'remark':'0507034'},
+{'title':'数据库系统概念', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'Abraham Silberschatz', 'remark':'0607001'},
+{'title':'The TeXbook 中文版', 'publisher':'文印店', 'category':'专业课', 'author':'', 'remark':'0607002'},
+{'title':'数据结构与算法分析 C语言描述', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'Mark Alien Weiss', 'remark':'0607003'},
+{'title':'逻辑与计算机设计基础', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'M.Morris Mano  Charies R.Kime', 'remark':'0607004'},
+{'title':'过程控制工程设计', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'孙洪程 李大字', 'remark':'0607005'},
+{'title':'线性控制系统分析与设计', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'John J.Dazzo Constantine H.Houpis', 'remark':'0607006'},
+{'title':'控制仪表与计算机控制装置', 'publisher':'化学工业出版社', 'category':'专业课', 'author':'周泽魁', 'remark':'0607007'},
+{'title':'集成电子技术基础教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'王小海', 'remark':'0607008'},
+{'title':'电子技术基础实验教程', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'阮秉涛', 'remark':'0607009'},
+{'title':'汇编程序设计', 'publisher':'科学出版社', 'category':'专业课', 'author':'白洪欢', 'remark':'0607010'},
+{'title':'嵌入式系统原理与设计', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'陈文智', 'remark':'0607011'},
+{'title':'数字图像处理', 'publisher':'西安电子科技大学出版社', 'category':'专业课', 'author':'何东健', 'remark':'0607012'},
+{'title':'C语言程序设计实验指导', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'颜晖', 'remark':'0607013'},
+{'title':'数字信号处理系统', 'publisher':'清华大学出版社', 'category':'专业课', 'author':'姚天任', 'remark':'0607014'},
+{'title':'全国周培源大学生力学竞赛赛题详解及点评', 'publisher':'机械工业出版社', 'category':'专业课', 'author':'高云峰 蒋持平', 'remark':'0607015'},
+{'title':'Introduction to Engineering Design', 'publisher':'打印资料', 'category':'专业课', 'author':'Arvid R.Eide Roland d.Jenison', 'remark':'0607017'},
+{'title':'自动检测技术与装置(张宏建)(二版)', 'publisher':'9787122092496', 'category':'专业课', 'author':'张宏建等编', 'remark':'0707001'},
+{'title':'自动控制原理', 'publisher':'9787122116079', 'category':'专业课', 'author':'暂无数据', 'remark':'0707005'},
+{'title':'基于英特尔平台的Android应用开发', 'publisher':'9787894362049', 'category':'专业课', 'author':'暂无数据', 'remark':'0707006'},
+{'title':'数字信号处理', 'publisher':'9787302239185', 'category':'专业课', 'author':'', 'remark':'0707010'},
+{'title':'数字系统设计与Verilog HDL（第4版）', 'publisher':'9787121124259', 'category':'专业课', 'author':'', 'remark':'0707011'},
+{'title':'数字系统设计实验教程-含光盘', 'publisher':'9787030301857', 'category':'专业课', 'author':'屈民军', 'remark':'0707012'},
+{'title':'集成电子技术基础教程（第2版）（下册）', 'publisher':'9787040239515', 'category':'专业课', 'author':'', 'remark':'0707016'},
+{'title':'化工原理', 'publisher':'9787030191502', 'category':'专业课', 'author':'', 'remark':'0707018'},
+{'title':'光电检测技术与系统', 'publisher':'9787111281160', 'category':'专业课', 'author':'刘铁根', 'remark':'0707019'},
+{'title':'电子电工学（第三版）', 'publisher':'9787040249255', 'category':'专业课', 'author':'叶挺秀', 'remark':'0707020'},
+{'title':'电工电子学（第3版）学习辅导与习题解答', 'publisher':'9787040249262', 'category':'专业课', 'author':'', 'remark':'0707022'},
+{'title':'游戏编程精粹4', 'publisher':'', 'category':'专业课', 'author':'沙鹰', 'remark':'0707026'},
+{'title':'introduction to engineer design', 'publisher':'', 'category':'专业课', 'author':'', 'remark':'0707028'},
+{'title':'the 8051 microcontroller and embedded systems', 'publisher':'', 'category':'专业课', 'author':'', 'remark':'0707032'},
+{'title':'cmos analog and mixed signal integrated circuit', 'publisher':'', 'category':'专业课', 'author':'', 'remark':'0707034'},
+{'title':'计算方法', 'publisher':'9787308030120', 'category':'专业课', 'author':'易大义等编', 'remark':'0907004'},
+{'title':'Java编程思想(英文版第4版)/经典原版书库', 'publisher':'9787111212508', 'category':'专业课', 'author':'美埃克尔', 'remark':'0907006'},
+{'title':'电工电子学（第3版）学习辅导与习题解答', 'publisher':'9787040249262', 'category':'专业课', 'author':'', 'remark':'0907010'},
+{'title':'单片机初级教程--单片机基础（第二版）', 'publisher':'9787810778411', 'category':'专业课', 'author':'张迎新', 'remark':'0907011'},
+{'title':'安全驾驶从这里开始', 'publisher':'9787114103117', 'category':'专业课', 'author':'', 'remark':'0907013'},
+{'title':'化工原理', 'publisher':'9787030191502', 'category':'专业课', 'author':'高锋编', 'remark':'0907013'},
+{'title':'分析化学简明教程学习指南', 'publisher':'高等教育出版社', 'category':'专业课', 'author':'邬建敏 陈恒武', 'remark':'0907016'},
+{'title':'电子电工学（第三版）', 'publisher':'9787040249255', 'category':'专业课', 'author':'贺益康. 潘再平. 编著', 'remark':'0907016'},
+{'title':'电力电子技术-(第二版)', 'publisher':'9787030281524', 'category':'专业课', 'author':'许力生', 'remark':'0907017'},
+{'title':'深入理解计算机系统(英文版)', 'publisher':'9787111326311', 'category':'专业课', 'author':'张德明著', 'remark':'0907020'},
+{'title':'MATLAB 6.5在科学计算中的应用', 'publisher':'9787302096191', 'category':'专业课', 'author':'［美］J.R.威尔特C.E.威克斯', 'remark':'0907022'},
+{'title':'自动检测技术与装置(张宏建)(二版)', 'publisher':'9787122092496', 'category':'专业课', 'author':'（美）多尔夫（，..），（美）毕晓普（，..）著', 'remark':'0907024'},
+{'title':'现代控制系统：第10版', 'publisher':'9787030162113', 'category':'专业课', 'author':'', 'remark':'0907025'},
+{'title':'自动控制原理简明教程（第2版）', 'publisher':'9787030209764', 'category':'专业课', 'author':'', 'remark':'0907027'},
+{'title':'电力系统继电保护（第2版）', 'publisher':'9787508399287', 'category':'专业课', 'author':'熊信银主编', 'remark':'0907028'},
+{'title':'普通高等教育“十一五”国家级规划教材 发电厂电气部分(第四版)', 'publisher':'9787508388304', 'category':'专业课', 'author':'', 'remark':'0907028'},
+{'title':'超宽带通信系统', 'publisher':'9787121102219', 'category':'专业课', 'author':'', 'remark':'0907028'},
+{'title':'高等院校物流管理与物流工程专业系列教材：物流自动化系统', 'publisher':'9787308071932', 'category':'专业课', 'author':'本书编写组编', 'remark':'0907030'},
+{'title':'Java语言程序设计：进阶篇（原书第8版）', 'publisher':'9787111342366', 'category':'专业课', 'author':'李亚宾  编', 'remark':'0907034'},
+{'title':'传感器技术', 'publisher':'9787564106591', 'category':'专业课', 'author':'美   编', 'remark':'0907036'},
+{'title':'控制理论CAI教程（第三版）', 'publisher':'9787030322548', 'category':'专业课', 'author':'张帼奋', 'remark':'0907038'},
+{'title':'INTRODUCTION TO LINEAR ALGEVRA第四版', 'publisher':'', 'category':'专业课', 'author':'FERERICO MILANO', 'remark':'0907040'},
+{'title':'POWER SYSTEM STABILITY SUBCOMMITTEE SPECIAL PUBLICATION', 'publisher':'', 'category':'专业课', 'author':'黄正达', 'remark':'0907042'},
+{'title':'高电压技术（第三版）', 'publisher':'', 'category':'专业课', 'author':'', 'remark':'0907044'},
+{'title':'INTRODUCTION TO ENGINEERING DESIGN', 'publisher':'', 'category':'专业课', 'author':'姚俊', 'remark':'0907045'},
+{'title':'自动控制元件实验指导书', 'publisher':'', 'category':'专业课', 'author':'', 'remark':'0907065'},
+{'title':'电磁场实验指导书', 'publisher':'', 'category':'专业课', 'author':'', 'remark':'0907066'},
+{'title':'电气原理与应用实验指导书', 'publisher':'', 'category':'专业课', 'author':'', 'remark':'0907067'},
+{'title':'交流电机工程实践', 'publisher':'', 'category':'专业课', 'author':'', 'remark':'0907068'},
+{'title':'电器学', 'publisher':'', 'category':'专业课', 'author':'', 'remark':'0908069'}
+    ];
+    data.forEach(function (value, index, ar) {
+      var found = 0;
+      for (var i = 1; i <= 8; i++) {
+        if ($(".usual ul li").eq(i - 1).text() == value.category) {
+          var id = "#tab" + i;
+          $(id + " tbody").append("<tr><td>" + value.title + "</td><td>" + value.publisher + "</td><td>" + value.author + "</td><td>" + value.remark + "</td></tr>");
+          found = 1;
+          break;
+        }
+      }
+      if (found == 0) {
+        $("#tab8 tbody").append("<tr><td>" + value.title + "</td><td>" + value.publisher + "</td><td>" + value.author + "</td><td>" + value.remark + "</td></tr>");
+      }
+    });
+    var select = $("<select><option value='0'>0</option><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option></select>");
+    $(".grid tbody tr").append($("<td/>").html(select));
+    $(".usual ul").idTabs();
+
+    $("select").change(function (e) {
+      var score = 0;
+      $("select").each(function () {
+        score += parseInt(this.value, 10);
+      });
+      if (score > 100) {
+        layer.tips("最多只能分配100个星星", this, { guide: 1, time: 2 });
+        this.value = 0;
+      }
+      $("#total").text(100 - score);
+    });
+
+    $("#submit").click(function () {
+      if ($("#inputName").val().length === 0) {
+        layer.tips("请填写姓名~", this, { guide: 1, time: 2 });
+        return false;
+      }
+      if (/^[0-9]{10}$/.exec($("#inputId").val()) === null) {
+        layer.tips("学号必须是10位的数字哦", this, { guide: 1, time: 2 });
+        return false;
+      }
+      var data = [];
+      $("select").each(function () {
+        var score = parseInt(this.value, 10);
+        if (score > 0 && score <= 5) {
+          // alert($(this).parents('tr').html());
+          var record = {
+            "title": $(this).parents('tr').find('td').eq(0).text(),
+            "publisher": $(this).parents('tr').find('td').eq(1).text(),
+            "author": $(this).parents('tr').find('td').eq(2).text(),
+            "score": score,
+            "remark": $(this).parents('tr').find('td input').val(),
+            "name": $('#inputName').val(),
+            "schoolId": $('#inputId').val()
+          };
+          data.push(record);
+        }
+      });
+       //alert(JSON.stringify(data));
+      var result = JSON.stringify(data);
+      //$("#result").html(result);
+      //$.layer({
+        //type: 1,
+        //area: ['auto', 'auto'],
+        //title: false,
+        //border: [0],
+        //page: { dom: '.popup' }
+      //});
+      alert("请将接下来要下载的文件发送到acee_sjch@163.com，请不要改动文件内容！！");
+      var blob = new Blob([result], { type: "text/plain;charset=utf-8" });
+      saveAs(blob, $("#inputId").val()+".txt");
+    });
+
+    $('#copyToClip').click(function () {
+      var text = $("#result").text();
+      // if (window.clipboardData)
+      // {
+      // 	window.clipboardData.setData("Text", copyText)
+      // }
+      // window.clipboardData.setData(text, d); 
+      layer.tips('复制成功', this, { guide: 1, time: 2 });
+    });
+  </script>
+
+</body>
 </html>
