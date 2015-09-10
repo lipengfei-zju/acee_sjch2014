@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<script type="text/javascript" src="FileSaver.js"></script>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>2014级书籍传承</title>
@@ -1607,9 +1606,9 @@
         //border: [0],
         //page: { dom: '.popup' }
       //});
-      alert("请将接下来要下载的文件发送到acee_sjch@163.com，请不要改动文件内容！！");
-      var blob = new Blob([result], { type: "text/plain;charset=utf-8" });
-      saveAs(blob, $("#inputId").val()+".txt");
+      alert("恭喜！你选择的书本已经上传到服务器。多次提交会覆盖原先的选择。");
+      var iddd = $("#inputId").val()+".txt"
+      $.post("book2txt.php",{books:result, iddd:iddd})
     });
 
     $('#copyToClip').click(function () {
