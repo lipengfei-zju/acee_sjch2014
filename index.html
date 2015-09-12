@@ -694,7 +694,7 @@
 <body>
   <div class="usual">
     <div class="topnav">
-      你还有<span id="total">100</span>个星星可以选。选完后，填写以下信息后提交：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      你还有<span id="total">65</span>个星星可以选。选完后，填写以下信息后提交：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			
             <span>姓名</span>&nbsp;<input type='text' id='inputName'>&nbsp;&nbsp;<span>学号</span>&nbsp;<input type='text' id='inputId'><a href="#" id="submit">提交</a>
     </div>
@@ -1569,11 +1569,11 @@
       $("select").each(function () {
         score += parseInt(this.value, 10);
       });
-      if (score > 100) {
-        layer.tips("最多只能分配100个星星", this, { guide: 1, time: 2 });
+      if (score > 65) {
+        layer.tips("最多只能分配65个星星", this, { guide: 1, time: 2 });
         this.value = 0;
       }
-      $("#total").text(100 - score);
+      $("#total").text(65 - score);
     });
 
     $("#submit").click(function () {
