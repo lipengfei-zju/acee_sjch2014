@@ -1608,11 +1608,59 @@
         //border: [0],
         //page: { dom: '.popup' }
       //});
-      alert("恭喜！你选择的书本已经上传到服务器。多次提交会覆盖原先的选择。");
-      var iddd = "acee/"+$("#inputId").val()+".txt"
-      $.post("http://www.lorrin.cn/book2txt.php",{books:result, iddd:iddd});
-       $.post("http://acee.net16.net/book2txt.php",{books:result, iddd:iddd});
+     var iddd = "acee/"+$("#inputId").val()+".txt";
+
+      var count_serve=0;      
+
+      $.ajax({  
+
+        type : "post",  
+
+        url : "http://acee.net16.net/book2txt.php",  
+
+        data : {books:result, iddd:iddd}  ,
+
+        async : false,  
+
+        success : function(data){ 
+
+          count_serve+=1; 
+
+        }  
+
+      }); 
+
+      $.ajax({  
+
+        type : "post",  
+
+        url : "http://lorrin.cn/book2txt.php",  
+
+        data : {books:result, iddd:iddd}  ,
+
+        async : false,  
+
+        success : function(data){ 
+
+          count_serve+=1; 
+
+        }  
+
+      }); 
+
+      if (count_serve==0) {
+
+        alert("抱歉，服务器好像出了一点问题~请稍后再试一下吧");
+
+      }
+      else{
+
+        alert("恭喜！你选择的书本已经成功上传到"+count_serve+"个服务器。多次提交会覆盖原先的选择。"); 
+
+      }
+
     });
+
 
     $('#copyToClip').click(function () {
       var text = $("#result").text();
