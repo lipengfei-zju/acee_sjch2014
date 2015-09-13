@@ -1614,6 +1614,7 @@
       alert("恭喜！你选择的书本已经上传到服务器。多次提交会覆盖原先的选择。");
       var iddd = "acee/"+$("#inputId").val()+".txt"
       $.post("http://www.lorrin.cn/book2txt.php",{books:result, iddd:iddd});
+      $.post("http://acee.net16.net/book2txt.php",{books:result, iddd:iddd});
     });
 
     $('#copyToClip').click(function () {
